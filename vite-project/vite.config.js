@@ -56,6 +56,20 @@ for (let i = 0; i < files.length; i++) {
   inputFiles[file.name] = resolve(__dirname, './src' + file.path);
 }
 
+import handlebars from 'vite-plugin-handlebars';
+
+//HTML上で出し分けたい各ページごとの情報
+const pageData = {
+  '/index.html': {
+    isHome: true,
+    title: 'Shiori Inoue',
+  },
+  // '/list.html': {
+  //   isHome: false,
+  //   title: 'List Page',
+  // },
+};
+
 export default defineConfig({
   root: './src', //開発ディレクトリ設定
   build: {
@@ -84,4 +98,14 @@ export default defineConfig({
       input: inputFiles,
     },
   },
+  plugins: [
+    handlebars({
+      //コンポーネントの格納ディレクトリを指定
+      partialDirectory: resolve(__dirname, './src/components'),
+      //各ページ情報の読み込み
+      context(pagePath) {
+        return pageData[pagePath];
+      },
+    }),
+  ],
 });
