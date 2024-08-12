@@ -1,10 +1,11 @@
 module.exports = {
-  plugins: {
-    'postcss-normalize-charset': {},
-    autoprefixer: {},
-    'postcss-sort-media-queries': {},
-    'css-declaration-sorter': {
-      order: 'smacss'
-    },
-  },
-}
+  plugins: [
+    require("autoprefixer")(),
+    require("css-declaration-sorter")({
+      order: "smacss", // alphabetical/ smacss / concentric-css
+    }),
+    require("postcss-sort-media-queries")({
+      sort: 'mobile-first'
+    }),
+  ],
+};
