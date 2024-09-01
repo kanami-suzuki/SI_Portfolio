@@ -1,0 +1,48 @@
+@mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+
+  @if $top !=null {
+    top: $top;
+  }
+
+  @if $right !=null {
+    right: $right;
+  }
+
+  @if $bottom !=null {
+    bottom: $bottom;
+  }
+
+  @if $left !=null {
+    left: $left;
+  }
+
+  // @include absolute($top:0, $bottom:0);
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin edge($color: rgba(0, 0, 0, .5)) {
+  text-shadow: -1px -1px 0 $color, -1px 0 0 $color, -1px 1px 0 $color,
+  0 -1px 0 $color, 0 1px 0 $color, 1px -1px 0 $color, 1px 0 0 $color, 1px 1px 0 $color;
+}
+
+@function vl8($value) {
+  $mxWidth: 780;
+  @return min(calc(8*$value)/$mxWidth * 100vw, calc(8*#{$value}px));
+}
+
+@function vl4($value) {
+  $mxWidth: 780;
+  @return min(calc(4*$value)/$mxWidth * 100vw, calc(4*#{$value}px));
+}
+
+@function vlpc($value) {
+  $mxWidth: 1200;
+  @return min(calc(8*$value)/$mxWidth * 100vw, calc(8*#{$value}px));
+}

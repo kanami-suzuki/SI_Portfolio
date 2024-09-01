@@ -1,0 +1,53 @@
+@use "style/group"as *;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  scroll-padding-top: 100px;
+
+  * {
+    position: relative;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: auto;
+  background-color: rgba(222, 221, 205, .9);
+  font-size: 1.6rem;
+  text-align: justify;
+
+  font-feature-settings: "palt";
+}
+
+head,
+section {
+  margin-bottom: 5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.lower-case {
+  @include lower;
+}
+
+.large-letter {
+  @include large;
+}
+
+.wrapping {
+  display: inline-block;
+}

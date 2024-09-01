@@ -1,0 +1,14 @@
+//フォントサイズ https://min-max-calculator.9elements.com/
+@mixin fz($f: 16) {
+  //固定サイズ
+  font-size: $f + px;
+  font-size: calc($f/10) + rem;
+}
+
+@mixin lower($size: 80%) {
+  font-size: $size;
+}
+
+@mixin large($size: 120%) {
+  font-size: $size;
+}
