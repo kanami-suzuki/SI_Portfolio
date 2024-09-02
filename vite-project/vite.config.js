@@ -6,6 +6,7 @@ import eslint from '@nabla/vite-plugin-eslint';
 
 export default defineConfig({
   root: "src",
+  base: "",
   build: {
     outDir: "../dist",
     emptyOutDir: true,
