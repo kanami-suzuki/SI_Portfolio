@@ -18,11 +18,17 @@ export default defineConfig({
         entryFileNames: `assets/js/[name].js`,
         chunkFileNames: `assets/js/[name].js`,
         assetFileNames: (assetInfo) => {
-          if (/\.( gif|jpeg|jpg|png|svg|webp| )$/.test(assetInfo.name)) {
+          if (/\.( gif|jpeg|jpg|png|svg|webp|ico| )$/.test(assetInfo.name)) {
             return 'assets/images/[name].[ext]';
           }
           if (/\.css$/.test(assetInfo.name)) {
             return 'assets/css/[name].[ext]';
+          }
+          if (/Jost.*\.ttf$/.test(assetInfo.name)) {
+            return 'assets/font/Jost/[name].[ext]';
+          }
+          if (/NotoSansJP.*\.ttf$/.test(assetInfo.name)) {
+            return 'assets/font/Noto_Sans_JP/[name].[ext]';
           }
           return 'assets/[name].[ext]';
         }
