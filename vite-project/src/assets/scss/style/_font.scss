@@ -13,6 +13,10 @@
   src: url("../font/Jost/Jost-Black.ttf") format("ttf");
 }
 
+@mixin jost {
+  font-family: "Jost";
+}
+
 @font-face {
   font-family: "NotoSansJP";
   src: url("../font/Noto_Sans_JP/NotoSansJP-Black.ttf") format("ttf");
@@ -24,4 +28,8 @@
   src: url("../font/Noto_Sans_JP/NotoSansJP-Regular.ttf") format("ttf");
   src: url("../font/Noto_Sans_JP/NotoSansJP-SemiBold.ttf") format("ttf");
   src: url("../font/Noto_Sans_JP/NotoSansJP-Thin.ttf") format("ttf");
+}
+
+@mixin nsJP {
+  font-family: "NotoSansJP";
 }
