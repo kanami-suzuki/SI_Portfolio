@@ -8,16 +8,18 @@ header {
 }
 
 .header_logo {
-  @include jost(900);
-  font-weight: bold;
+  @include jost(400);
   font-size: 24px;
+  text-shadow: -5px 5px 0 rgba(88, 135, 78, .2);
 }
 
 .header_navList {
   display: flex;
   align-items: flex-start;
+  gap: 16px;
 }
 
 .header_navItem {
+  @include jost(400);
   font-size: 16px;
 }
