@@ -12,7 +12,8 @@
   src: url("../font/Jost/Jost-Thin.ttf") format("truetype");
 }
 
-@mixin jost {
+@mixin jost($weight) {
+  font-weight: $weight;
   font-family: "Jost";
 }
 
@@ -29,6 +30,7 @@
   src: url("../font/Noto_Sans_JP/NotoSansJP-Thin.ttf") format("truetype");
 }
 
-@mixin nsJP {
+@mixin nsJP($weight) {
+  font-weight: $weight;
   font-family: "NotoSansJP";
 }

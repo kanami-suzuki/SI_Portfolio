@@ -1,5 +1,23 @@
 @use "style/group"as *;
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 24px;
+}
+
 .header_logo {
-  @include jost;
+  @include jost(900);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header_navList {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header_navItem {
+  font-size: 16px;
 }
