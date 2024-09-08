@@ -10,6 +10,7 @@ export default defineConfig({
   build: {
     outDir: "../dist",
     emptyOutDir: true,
+    assetsInlineLimit: 0,
     rollupOptions: {
       input: {
         main: "src/index.pug",
