@@ -15,8 +15,12 @@ html {
 body {
   position: relative;
   z-index: 2;
+  width: 100%;
+  max-width: 100%;
   margin: auto;
+  overflow: hidden;
   background: rgb(222, 221, 205);
+  color: #322c25;
   font-size: 1.6rem;
   font-family: serif;
   text-align: justify;
@@ -24,7 +28,7 @@ body {
   font-feature-settings: "palt";
 
   &::after {
-    opacity: .35;
+    opacity: .3;
     position: fixed;
     top: 0;
     z-index: -1;
