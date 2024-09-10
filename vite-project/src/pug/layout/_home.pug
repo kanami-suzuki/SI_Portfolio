@@ -6,27 +6,10 @@ main
   section.topWorks_container
     h3.topWorks_title Works
     ul.topWorks_list
-      li.topWorks_item
-        h4.topWorks_itemTitle タイトルテキスト
-        p.topWorks_itemDate
-          time(datetime="2024-05-03") 2024.05.03 
-      li.topWorks_item 
-        h4.topWorks_itemTitle タイトルテキスト
-        p.topWorks_itemDate
-          time(datetime="2024-05-03") 2024.05.03 
-      li.topWorks_item 
-        h4.topWorks_itemTitle タイトルテキスト
-        p.topWorks_itemDate
-          time(datetime="2024-05-03") 2024.05.03 
-      li.topWorks_item 
-        h4.topWorks_itemTitle タイトルテキスト
-        p.topWorks_itemDate
-          time(datetime="2024-05-03") 2024.05.03 
-      li.topWorks_item 
-        h4.topWorks_itemTitle タイトルテキスト
-        p.topWorks_itemDate
-          time(datetime="2024-05-03") 2024.05.03 
-      li.topWorks_item 
-        h4.topWorks_itemTitle タイトルテキスト
-        p.topWorks_itemDate
-          time(datetime="2024-05-03") 2024.05.03 
+      - for(let i = 1; i < 6; i++)
+        li.topWorks_item
+          h4.topWorks_itemTitle タイトルテキスト
+          p.topWorks_itemDate
+            time(datetime="2024-05-03") 2024.05.03 
+          .topWorks_thumbnailImg
+            img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像" width="292" height="378")
