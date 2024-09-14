@@ -24,7 +24,7 @@
 
 .topWorks_item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: .5fr 5fr .5fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
@@ -33,6 +33,7 @@
 }
 
 .topWorks_itemTitle {
+  @include nsJP(500);
   grid-column: 2/ 3;
   grid-row: 2 / 3;
   position: relative;
@@ -40,9 +41,9 @@
   width: 100%;
   margin: auto;
   color: #fff;
+  font-size: 18px;
+  letter-spacing: .23em;
   text-align: center;
-
-  text-wrap: nowrap;
 }
 
 .topWorks_itemDate {
