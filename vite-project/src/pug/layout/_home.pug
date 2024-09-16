@@ -3,6 +3,7 @@ main
     h2.topTitle Shiori Inoue
     .scrollDown
       img(src="./assets/images/scrollDown.svg", alt="下矢印" width="43" height="26")
+
   section.topWorks_container
     h3.topWorks_title Works
     ul.topWorks_list
@@ -13,6 +14,7 @@ main
             time(datetime="2024-05-03") 2024.05.03 
           .topWorks_thumbnailImg
             img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像" width="292" height="378")
-    .topWorks_moreBtn
-      p.topWorks_moreBtnText More Works
-      img(src="./assets/images/arrow_icon.svg", alt="右向きの矢印" width="26" height="16")
+    .topWorks_moreBtnWrap
+      a(href="#").topWorks_moreBtn 
+        p.topWorks_moreBtnText More Works
+        img(src="./assets/images/arrow_icon.svg", alt="右向きの矢印" width="26" height="16")
