@@ -25,3 +25,12 @@
     width: 18px;
   }
 }
+
+.topTitleLayout {
+  @include jost(400);
+  opacity: .5;
+  margin-bottom: 24px;
+  font-size: 56px;
+  letter-spacing: .13em;
+  text-align: center;
+}
