@@ -1,1 +1,38 @@
 @use "style/group"as *;
+
+.topProfile_container {
+  padding: 0 5%;
+}
+
+.topProfile_content {
+  display: flex;
+  gap: 32px;
+  padding: 10% 8%;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.topPrifile_icon {
+  width: 53%;
+}
+
+.topPrifile_text {
+  width: 47%;
+}
+
+.topPrifile_textName {
+  @include nsJP(600);
+  margin-bottom: 16px;
+  font-size: 18px;
+
+  span {
+    font-size: 60%;
+  }
+}
+
+.topPrifile_textOverview {
+  @include nsJP(400);
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: .04em;
+  text-align: justify;
+}
