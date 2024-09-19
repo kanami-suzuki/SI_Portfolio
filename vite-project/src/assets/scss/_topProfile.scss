@@ -1,7 +1,9 @@
 @use "style/group"as *;
 
 .topProfile_container {
-  padding: 0 5%;
+  max-width: 950px;
+  margin: auto;
+  padding: 0 40px;
 }
 
 .topProfile_content {

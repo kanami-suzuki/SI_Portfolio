@@ -1,0 +1,24 @@
+@use "style/group"as *;
+
+.topContact_title {
+  margin-bottom: 8px;
+}
+
+.topContact_text {
+  @include nsJP(400);
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+}
+
+.topContact_btn {
+  @include nsJP(300);
+  width: fit-content;
+  margin: 32px auto 0;
+  padding: 16px 10%;
+  background-color: #322c25;
+
+  a {
+    color: #fff;
+  }
+}
