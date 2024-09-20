@@ -4,22 +4,31 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin: 32px clamp(24px, 3vw, 72px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 20px clamp(24px, 3vw, 72px);
+  background-color: rgba(255, 255, 255, .1);
+
+  backdrop-filter: blur(10px);
 }
 
 .header_logo {
   @include jost(400);
-  font-size: 24px;
-  text-shadow: -5px 5px 0 rgba(88, 135, 78, .2);
+  font-size: 20px;
+  text-shadow: -4px 4px 0 rgba(88, 135, 78, .3);
 }
 
 .header_navList {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: 14px;
 }
 
 .header_navItem {
   @include jost(400);
-  font-size: 16px;
+  font-size: 14px;
+  text-shadow: -3px 3px 0 rgba(88, 135, 78, .3);
 }
