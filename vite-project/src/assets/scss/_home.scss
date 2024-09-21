@@ -20,10 +20,10 @@
   position: absolute;
   right: clamp(24px, 3vw, 72px);
   bottom: 24px;
-
-  img {
-    width: 18px;
-  }
+  width: 24px;
+  height: 24px;
+  border: 2px solid #322c25;
+  border-radius: 100px;
 }
 
 .topTitleLayout {
