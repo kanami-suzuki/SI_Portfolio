@@ -1,0 +1,12 @@
+@use "style/group"as *;
+
+.footerContainer {
+  padding: 64px 0 24px;
+  text-align: center;
+
+  small {
+    @include jost(200);
+    color: #515151;
+    letter-spacing: .05em;
+  }
+}

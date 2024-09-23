@@ -1,7 +1,7 @@
 @use "style/group"as *;
 
 .topWorks_container {
-  padding: 0 24px;
+  padding: 64px 24px 0;
 }
 
 .topWorks_list {
@@ -25,7 +25,7 @@
 }
 
 .topWorks_itemTitle {
-  @include nsJP(500);
+  @include nsJP(400);
   grid-column: 2/ 3;
   grid-row: 2 / 3;
   position: relative;
@@ -34,7 +34,7 @@
   margin: auto;
   color: #fff;
   font-size: 18px;
-  letter-spacing: .23em;
+  letter-spacing: .2em;
   text-align: center;
   text-shadow: 0 0 2px rgba(0, 0, 0, .8);
 }
