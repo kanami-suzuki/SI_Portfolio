@@ -15,13 +15,23 @@
 }
 
 .topWorks_item {
-  display: grid;
-  grid-template-columns: .5fr 5fr .5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   width: calc(100% / 3.5);
+
+  a {
+    display: grid;
+    grid-template-columns: .5fr 5fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    transition: all .3s;
+
+    &:hover .topWorks_thumbnailImg::after {
+      background-color: rgba(0, 0, 0, .1);
+      transition: all .3s;
+    }
+  }
 }
 
 .topWorks_itemTitle {
@@ -72,6 +82,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .3);
     content: "";
+    transition: all .3s;
   }
 }
 

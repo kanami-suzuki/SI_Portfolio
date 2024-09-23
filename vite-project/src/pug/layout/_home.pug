@@ -9,11 +9,12 @@ main
     ul.topWorks_list
       - for(let i = 1; i <= 6; i++)
         li.topWorks_item
-          h4.topWorks_itemTitle タイトルテキスト
-          p.topWorks_itemDate
-            time(datetime="2024-05-03") 2024.05.03 
-          .topWorks_thumbnailImg
-            img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
+          a(href="#") 
+            h4.topWorks_itemTitle タイトルテキスト
+            p.topWorks_itemDate
+              time(datetime="2024-05-03") 2024.05.03 
+            .topWorks_thumbnailImg
+              img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
     .topWorks_moreBtnWrap
       a(href="#").topWorks_moreBtn 
         p.topWorks_moreBtnText More Works
