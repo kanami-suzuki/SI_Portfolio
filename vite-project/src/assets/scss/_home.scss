@@ -13,7 +13,7 @@
 .topTitle {
   @include jost(500);
   font-size: 56px;
-  text-shadow: -5px 5px 0 rgba(88, 135, 78, .2);
+  text-shadow: -5px 5px 0 #58874e33;
 }
 
 .scrollDown {
@@ -24,6 +24,18 @@
   height: 24px;
   border: 2px solid #322c25;
   border-radius: 100px;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 28px;
+    background-color: #322c25;
+    content: "";
+
+    translate: -50% -5%;
+  }
 }
 
 .topTitleLayout {

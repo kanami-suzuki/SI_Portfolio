@@ -19,10 +19,36 @@
   @include nsJP(300);
   width: fit-content;
   margin: 32px auto 0;
-  padding: 16px 10%;
+  border: 1px solid #322c25;
   background-color: #322c25;
 
   a {
-    color: #fff;
+    display: block;
+    padding: 16px 72px;
+    color: #ffffff;
+
+    &:hover::after {
+      transform: scaleX(1);
+
+      transform-origin: left;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, .3);
+      content: "";
+      pointer-events: none;
+      user-select: none;
+      transition: all .5s ease;
+      transition-property: transform;
+
+      transform-origin: left;
+    }
   }
 }
