@@ -19,21 +19,56 @@
 .scrollDown {
   position: absolute;
   right: clamp(24px, 3vw, 72px);
-  bottom: 24px;
+  bottom: 40px;
   width: 24px;
   height: 24px;
   border: 2px solid #322c25;
   border-radius: 100px;
 
-  &::after {
+  span {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 2px;
+    width: 1.5px;
     height: 28px;
     background-color: #322c25;
-    content: "";
+    animation: scrollDown 2.5s ease infinite;
 
+    translate: -50% -5%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      bottom: 2px;
+      left: -1px;
+      width: 10px;
+      height: 1.5px;
+      border-radius: 5px;
+      background-color: #322c25;
+      content: "";
+    }
+
+    &::before {
+      rotate: 45deg;
+      translate: -6px 0;
+    }
+
+    &::after {
+      rotate: -45deg;
+    }
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    translate: -50% -5%;
+  }
+
+  50% {
+    translate: -50% 5%;
+  }
+
+  100% {
     translate: -50% -5%;
   }
 }
