@@ -5,7 +5,7 @@ main
       span
       //- img(src="./assets/images/scrollDown.svg", alt="下矢印", width="43", height="26")
 
-  section.topWorks_container
+  section#works.topWorks_container
     h3.topWorks_title.topTitleLayout Works
     ul.topWorks_list
       - for(let i = 1; i <= 6; i++)
@@ -21,7 +21,7 @@ main
         p.topWorks_moreBtnText More Works
         img(src="./assets/images/arrow_icon.svg", alt="右向きの矢印" width="26" height="16")
   
-  section.topProfile_container
+  section#profile.topProfile_container
     h3.topProfile_title.topTitleLayout Profile
     .topProfile_content
       .topPrifile_icon: img(src="./assets/images/topProfile_icon.png", alt="アイコンの画像", width="396", height="396")
@@ -32,7 +32,7 @@ main
           br 
           | 出身とか、取ったことがある賞とか今までの経験とか所属とか使用ツールとかいい感じに
   
-  section.topContact_container
+  section#contact.topContact_container
     h3.topContact_title.topTitleLayout Contact
     .topContact_content
       p.topContact_text お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。
