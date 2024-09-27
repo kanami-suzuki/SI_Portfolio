@@ -42,5 +42,8 @@
     "> 5%",
     "Firefox ESR",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
