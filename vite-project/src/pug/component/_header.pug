@@ -1,27 +1,28 @@
-.background_image
-  if name == 'home'
-    header
-      h1.header_logo 
-        a(href="#") Shiori Inoue
-      nav.header_nav
-        ul.header_navList
-          li.header_navItem 
-            a(href="#works") works
-          li.header_navItem 
-            a(href="#profile") profile
-          li.header_navItem 
-            a(href="#contact") contact
-          li.header_navItem.header_Xicom
-            a(href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer") 
-              img(src="assets/images/x_icon.svg", alt="Xのアイコン" width="24" height="24")
-
-  if name == 'works'
+if name == 'home'
+  .background_image
+  header
     h1.header_logo 
       a(href="#") Shiori Inoue
     nav.header_nav
       ul.header_navList
         li.header_navItem 
+          a(href="#works") works
+        li.header_navItem 
+          a(href="#profile") profile
+        li.header_navItem 
           a(href="#contact") contact
         li.header_navItem.header_Xicom
           a(href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer") 
             img(src="assets/images/x_icon.svg", alt="Xのアイコン" width="24" height="24")
+
+if name == 'works'
+  .background_image
+  h1.header_logo 
+    a(href="#") Shiori Inoue
+  nav.header_nav
+    ul.header_navList
+      li.header_navItem 
+        a(href="#contact") contact
+      li.header_navItem.header_Xicom
+        a(href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer") 
+          img(src="assets/images/x_icon.svg", alt="Xのアイコン" width="24" height="24")
