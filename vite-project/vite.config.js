@@ -14,7 +14,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "src/index.pug",
-        // about: "src/works/works.pug"
+        works: "src/works.pug"
       },
       output: {
         entryFileNames: `assets/js/[name].js`,
