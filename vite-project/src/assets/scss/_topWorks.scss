@@ -4,7 +4,7 @@
   padding: 64px 24px 0;
 }
 
-.topWorks_list {
+.works_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,7 +14,7 @@
   margin: auto;
 }
 
-.topWorks_item {
+.works_item {
   width: calc(100% / 3.5);
 
   a {
@@ -27,14 +27,14 @@
     width: 100%;
     transition: all .3s;
 
-    &:hover .topWorks_thumbnailImg::after {
+    &:hover .works_thumbnailImg::after {
       background-color: #0000001a;
       transition: all .3s;
     }
   }
 }
 
-.topWorks_itemTitle {
+.works_itemTitle {
   @include nsJP(400);
   grid-column: 2/ 3;
   grid-row: 2 / 3;
@@ -49,7 +49,7 @@
   text-shadow: 0 0 2px #000000cc;
 }
 
-.topWorks_itemDate {
+.works_itemDate {
   @include jost(300);
   grid-column: 2 / 4;
   grid-row: 3 / 4;
@@ -62,7 +62,7 @@
   text-align: right;
 }
 
-.topWorks_thumbnailImg {
+.works_thumbnailImg {
   display: block;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
@@ -86,7 +86,7 @@
   }
 }
 
-.topWorks_moreBtnWrap {
+.works_moreBtnWrap {
   position: relative;
   width: fit-content;
   margin: 36px auto;
@@ -118,7 +118,7 @@
   }
 }
 
-.topWorks_moreBtn {
+.works_moreBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +141,7 @@
   }
 }
 
-.topWorks_moreBtnText {
+.works_moreBtnText {
   @include jost(400);
   position: relative;
   z-index: 2;

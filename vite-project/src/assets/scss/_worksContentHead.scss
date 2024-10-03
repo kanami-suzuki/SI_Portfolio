@@ -1,0 +1,14 @@
+@use "style/group"as *;
+
+.worksContent_head {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px auto 16px;
+}
+
+.worksTitle {
+  @include jost(400);
+  font-size: 64px;
+  letter-spacing: .05em;
+  text-shadow: -5px 5px 0 #58874e33;
+}

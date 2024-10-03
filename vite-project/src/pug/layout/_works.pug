@@ -10,17 +10,17 @@ main
         li.worksYear_item 2022
         li.worksYear_item 2021
   section.worksContent_list
-    ul.worksContent_list
+    ul.works_list
       - for(let i = 1; i <= 6; i++)
         - let delay = (i % 3 === 1) ? 100 : (i % 3 === 2) ? 300 : 600
-          li(data-aos="fade", data-aos-delay=delay, data-aos-duration="1000").worksContent_item
+          li(data-aos="fade", data-aos-delay=delay, data-aos-duration="1000").works_item
             a(href="#") 
-              h4.worksContent_itemTitle タイトルテキスト
-              p.worksContent_itemDate
+              h4.works_itemTitle タイトルテキスト
+              p.works_itemDate
                 time(datetime="2024-05-03") 2024.05.03 
-              .worksContent_thumbnailImg
+              .works_thumbnailImg
                 img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
-    .worksContent_more
-      a(href="works.pug").topWorks_moreBtn 
-        p.worksContent_moreText More Works
-        img.worksContent_moreArrow(src="./assets/images/arrow_icon.svg", alt="右向きの矢印" width="26" height="16")
+    .works_moreBtnWrap
+      a(href="works.pug").works_moreBtn 
+        p.works_moreText More Works
+        img(src="./assets/images/worksContent_moreArrow.svg", alt="下向きの矢印" width="26" height="16")
