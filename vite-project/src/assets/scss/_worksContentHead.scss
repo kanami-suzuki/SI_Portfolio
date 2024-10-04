@@ -12,3 +12,25 @@
   letter-spacing: .05em;
   text-shadow: -5px 5px 0 #58874e33;
 }
+
+.worksYear {
+  display: flex;
+  align-items: flex-start;
+  font-size: 24px;
+}
+
+.worksYear_text {
+  @include jost(400);
+}
+
+.worksYear_item {
+  @include jost(300);
+  padding: 2px 32px;
+  border: 1px solid #949494;
+  background-color: #ffffff66;
+  text-align: center;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
