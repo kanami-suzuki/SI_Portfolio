@@ -23,14 +23,42 @@
   @include jost(400);
 }
 
+.worksYear_list {
+  display: flex;
+  flex-direction: column;
+  width: 145px;
+  height: 45px;
+  overflow: hidden;
+
+  &.worksYear_listVisible {
+    overflow: visible;
+  }
+}
+
 .worksYear_item {
   @include jost(300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  min-height: 45px;
   padding: 2px 32px;
   border: 1px solid #949494;
+  box-sizing: border-box;
   background-color: #ffffff66;
-  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  a {
+    display: block;
+  }
 
   &:hover {
     background-color: #ffffff;
+  }
+
+  &:first-of-type {
+    background-color: inherit;
   }
 }
