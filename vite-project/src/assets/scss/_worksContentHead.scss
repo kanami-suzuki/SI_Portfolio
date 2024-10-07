@@ -15,19 +15,22 @@
 
 .worksYear {
   display: flex;
-  align-items: flex-start;
-  font-size: 24px;
+  align-items: center;
+  font-size: 18px;
 }
 
 .worksYear_text {
   @include jost(400);
+  min-height: 35px;
+  padding: 2px 12px 0;
+  border-bottom: 1px solid #949494;
 }
 
 .worksYear_list {
   display: flex;
   flex-direction: column;
-  width: 145px;
-  height: 45px;
+  width: 104px;
+  height: 35px;
   overflow: hidden;
 
   &.worksYear_listVisible {
@@ -42,7 +45,7 @@
   align-items: center;
   z-index: 1;
   width: 100%;
-  min-height: 45px;
+  min-height: 35px;
   padding: 2px 32px;
   border: 1px solid #949494;
   box-sizing: border-box;
