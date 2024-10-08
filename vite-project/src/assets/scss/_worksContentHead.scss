@@ -3,12 +3,15 @@
 .worksContent_head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 950px;
   margin: 120px auto 16px;
+  padding: 0 40px;
 }
 
 .worksTitle {
   @include jost(400);
-  font-size: 64px;
+  font-size: 72px;
   letter-spacing: .05em;
   text-shadow: -5px 5px 0 #58874e33;
 }
@@ -32,6 +35,8 @@
   width: 104px;
   height: 35px;
   overflow: hidden;
+  border-top: 1px solid #949494;
+  border-bottom: 1px solid #949494;
 
   &.worksYear_listVisible {
     overflow: visible;
@@ -47,9 +52,11 @@
   width: 100%;
   min-height: 35px;
   padding: 2px 32px;
-  border: 1px solid #949494;
+  border-right: 1px solid #949494;
+  border-bottom: 1px solid #949494;
+  border-left: 1px solid #949494;
   box-sizing: border-box;
-  background-color: #ffffff66;
+  background-color: #ffffff7e;
   cursor: pointer;
   transition: all .2s ease-in-out;
 
@@ -63,5 +70,9 @@
 
   &:first-of-type {
     background-color: inherit;
+  }
+
+  &:nth-of-type(2) {
+    margin-top: -1px;
   }
 }
