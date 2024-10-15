@@ -1,0 +1,20 @@
+@use "style/group"as *;
+
+.workHead_thumbnail {
+  position: relative;
+  background-color: #322c25;
+
+  p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    text-align: right;
+  }
+}
+
+.workThumbnail_noImage {
+  width: 240px;
+  margin: auto;
+  padding: 8px 0 4px;
+}
