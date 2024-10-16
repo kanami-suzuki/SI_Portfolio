@@ -1,5 +1,17 @@
 @use "style/group"as *;
 
+.workHead {
+  position: relative;
+}
+
+.workHead_title {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  z-index: 2;
+  background-color: #ffffffcc;
+}
+
 .workHead_thumbnail {
   position: relative;
   background-color: #322c25;
