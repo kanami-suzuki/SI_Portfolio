@@ -5,11 +5,13 @@
 }
 
 .workHead_title {
+  @include jost(400);
   position: absolute;
   top: -5%;
   left: 0;
   z-index: 2;
   background-color: #ffffffcc;
+  font-size: 40px;
 }
 
 .workHead_thumbnail {
@@ -17,10 +19,12 @@
   background-color: #322c25;
 
   p {
+    @include jost(400);
     position: absolute;
-    top: 0;
-    right: 0;
-    color: #ffffff;
+    top: 25px;
+    right: 40px;
+    color: #ffffff99;
+    font-size: 40px;
     text-align: right;
   }
 }
