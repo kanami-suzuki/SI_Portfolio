@@ -2,16 +2,18 @@
 
 .workHead {
   position: relative;
+  margin-top: 48px;
 }
 
 .workHead_title {
-  @include jost(400);
+  @include nsJP(400);
   position: absolute;
-  top: -5%;
+  top: -28px;
   left: 0;
   z-index: 2;
+  padding: 5px 62px 5px 24px;
   background-color: #ffffffcc;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .workHead_thumbnail {
@@ -33,4 +35,12 @@
   width: 240px;
   margin: auto;
   padding: 8px 0 4px;
+}
+
+.workHead_date {
+  @include jost(400);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffffcc;
 }
