@@ -1,0 +1,9 @@
+@use "style/group"as *;
+
+.worksPageTransition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 950px;
+  padding: 0 40px;
+}

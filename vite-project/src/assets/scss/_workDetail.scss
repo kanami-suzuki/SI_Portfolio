@@ -1,0 +1,22 @@
+@use "style/group"as *;
+
+.workDetail {
+  max-width: 950px;
+  padding: 0 40px;
+}
+
+.workDetail_text {
+  @include nsJP(300);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.workDetail_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  margin: 64px auto 0;
+  background-color: #d9d9d9;
+}

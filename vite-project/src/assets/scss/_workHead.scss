@@ -2,6 +2,7 @@
 
 .workHead {
   position: relative;
+  max-width: 950px;
   margin-top: 48px;
 }
 
@@ -23,10 +24,10 @@
   p {
     @include jost(400);
     position: absolute;
-    top: 25px;
+    top: 16px;
     right: 24px;
     color: #ffffff99;
-    font-size: 40px;
+    font-size: 24px;
     text-align: right;
   }
 }
@@ -40,7 +41,9 @@
 .workHead_date {
   @include jost(400);
   position: absolute;
-  right: 0;
+  right: 24px;
   bottom: 0;
+  padding: 4px 10px;
   background-color: #ffffffcc;
+  font-size: 15px;
 }
