@@ -1,21 +1,14 @@
 // ブレイクポイント
-$lpc: 1300px; //パソコンサイズ
-$pc: 768px; //タブレットサイズ
-$sp: 450px;
+$sp: 768px; //タブレットサイズ
+$msp: 450px;
 
-@mixin lpc {
-  @media (min-width: ($lpc)) {
-    @content;
-  }
-}
-
-@mixin pc {
+@mixin sp {
   @media (min-width: ($pc)) {
     @content;
   }
 }
 
-@mixin sp {
+@mixin msp {
   @media (max-width: ($sp)) {
     @content;
   }
