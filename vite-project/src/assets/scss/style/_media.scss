@@ -3,13 +3,13 @@ $sp: 768px; //タブレットサイズ
 $msp: 450px;
 
 @mixin sp {
-  @media (min-width: ($pc)) {
+  @media (max-width: ($sp)) {
     @content;
   }
 }
 
 @mixin msp {
-  @media (max-width: ($sp)) {
+  @media (max-width: ($msp)) {
     @content;
   }
 }
