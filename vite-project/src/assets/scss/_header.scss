@@ -33,41 +33,39 @@ header {
   text-shadow: -3px 3px 0 #58874e4d;
 }
 
-.topContact_sp {
+.header_navSP {
   display: none;
 }
 
 @include sp {
   header {
     position: relative;
+    filter: blur(0);
+    background-color: #ffffff00;
   }
 
-  .topContact_pc {
+  .header_navPC {
     display: none;
   }
 
-  .topContact_sp {
+  .header_navSP {
     display: block;
-    position: fixed;
-    top: 248px;
-    right: 0;
-    padding: 8px 20px 16px 20px;
-    background-color: #58874e4d;
   }
 
-  .header_Xicom {
+  .headerHover_nav {
     position: fixed;
-    top: 192px;
+    top: 160px;
     right: 0;
-    padding: 16px 20px 8px 20px;
+    padding: 16px;
     background-color: #58874e4d;
-  }
 
-  .topContact_sp,
-  .header_Xicom {
     img {
       width: 32px;
       height: 32px;
     }
+  }
+
+  .header_Xicom {
+    margin-top: 16px;
   }
 }
