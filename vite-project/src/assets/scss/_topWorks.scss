@@ -148,3 +148,13 @@
   font-size: 20px;
   letter-spacing: .05em;
 }
+
+@include sp {
+  .topWorks_container {
+    padding: 120px 24px 0;
+  }
+
+  .topTitleLayout {
+    opacity: 1;
+  }
+}
