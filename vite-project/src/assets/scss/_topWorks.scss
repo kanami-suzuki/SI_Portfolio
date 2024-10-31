@@ -157,4 +157,12 @@
   .topTitleLayout {
     opacity: 1;
   }
+
+  .works_list {
+    gap: 20px 8%;
+  }
+
+  .works_item {
+    width: calc(100% / 2.2);
+  }
 }

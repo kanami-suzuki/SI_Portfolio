@@ -15,7 +15,9 @@ main
               p.works_itemDate
                 time(datetime="2024-05-03") 2024.05.03 
               .works_thumbnailImg
-                img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
+                picture 
+                  source(srcset="./assets/images/worksThumbnail_noImage_sp.png", media="(max-width: 768px)", type="image/png", width="194", height="128")
+                  img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
     .works_moreBtnWrap
       a(href="works.html").works_moreBtn 
         p.works_moreBtnText More Works
