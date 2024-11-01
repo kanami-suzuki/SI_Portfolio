@@ -164,5 +164,18 @@
 
   .works_item {
     width: calc(100% / 2.2);
+    background-color: #473e34;
+  }
+
+  .works_itemTitle {
+    @include jost(300);
+    font-size: max(15px, 3vw);
+  }
+
+  .works_thumbnailImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: min(40px, 11vw) 10%;
   }
 }
