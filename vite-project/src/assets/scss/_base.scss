@@ -76,3 +76,11 @@ button {
 .wrapping {
   display: inline-block;
 }
+
+@include sp {
+  body {
+    &::after {
+      opacity: .5;
+    }
+  }
+}

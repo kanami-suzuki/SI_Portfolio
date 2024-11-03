@@ -91,7 +91,7 @@
   width: fit-content;
   margin: 36px auto;
   overflow: hidden;
-  border: 1px solid #a2a2a2;
+  border: 1px solid #a2a2a280;
 
   &:hover::after {
     transform: scaleX(1);
@@ -165,6 +165,10 @@
   .works_item {
     width: calc(100% / 2.2);
     background-color: #473e34;
+
+    a {
+      grid-template-rows: .5fr 1fr .5fr;
+    }
   }
 
   .works_itemTitle {
@@ -172,10 +176,33 @@
     font-size: max(15px, 3vw);
   }
 
+  .works_itemDate {
+    font-size: max(10px, 2vw);
+  }
+
   .works_thumbnailImg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: min(40px, 11vw) 10%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .works_moreBtnWrap {
+    margin: 12% auto;
+  }
+
+  .works_moreBtn {
+    padding: 10px 24px;
+
+    img {
+      width: max(16px, 2vw);
+    }
+  }
+
+  .works_moreBtnText {
+    font-size: max(16px, 2vw);
   }
 }

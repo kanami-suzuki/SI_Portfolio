@@ -37,6 +37,10 @@ header {
   display: none;
 }
 
+.headerHover_nav {
+  display: none;
+}
+
 @include sp {
   header {
     position: relative;
@@ -67,6 +71,7 @@ header {
   }
 
   .headerHover_nav {
+    display: block;
     position: fixed;
     top: 160px;
     right: 0;
