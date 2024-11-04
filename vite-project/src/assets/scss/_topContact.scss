@@ -52,3 +52,25 @@
     }
   }
 }
+
+@include sp {
+  .topContact_container {
+    padding: min(155px, 35vw) 0 0;
+  }
+
+  .topContact_title {
+    margin-bottom: min(32px, 4vw);
+  }
+
+  .topContact_text {
+    width: 85%;
+    margin: auto;
+  }
+
+  .topContact_btn {
+    a {
+      padding: min(32px, 4vw) min(48px, 9vw);
+      font-size: min(15px, 3vw);
+    }
+  }
+}
