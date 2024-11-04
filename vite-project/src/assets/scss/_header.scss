@@ -46,8 +46,9 @@ header {
 @include sp {
   header {
     position: relative;
-    filter: blur(0);
     background-color: #ffffff00;
+
+    backdrop-filter: blur(0);
   }
 
   .header_navPC {

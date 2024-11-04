@@ -76,3 +76,25 @@
     margin-top: -1px;
   }
 }
+
+@include sp {
+  .worksContent_head {
+    flex-direction: column;
+    gap: min(56px, 16vw);
+    margin: min(120px, 16vw) auto 16px;
+  }
+
+  .worksTitle {
+    font-size: min(64px, 12vw);
+  }
+
+  .worksYear {
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+
+  .worksYear_text {
+    border-bottom: none;
+  }
+}
