@@ -39,3 +39,35 @@
   letter-spacing: .04em;
   text-align: justify;
 }
+
+@include sp {
+  .topProfile_container {
+    padding: min(120px, 24vw) 0 0;
+  }
+
+  .topProfile_content {
+    flex-direction: column;
+    justify-content: center;
+    gap: min(16px, 3vw);
+
+    > div {
+      margin: auto;
+    }
+  }
+
+  .topPrifile_icon {
+    width: 32%;
+  }
+
+  .topPrifile_text {
+    width: 85%;
+  }
+
+  .topPrifile_textName {
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+}

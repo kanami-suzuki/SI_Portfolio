@@ -19,6 +19,7 @@ header {
   @include jost(400);
   font-size: 20px;
   text-shadow: -4px 4px 0 #58874e4d;
+  user-select: none;
 }
 
 .header_navList {
@@ -31,6 +32,7 @@ header {
   @include jost(400);
   font-size: 14px;
   text-shadow: -3px 3px 0 #58874e4d;
+  user-select: none;
 }
 
 .header_navSP {
@@ -75,6 +77,7 @@ header {
     position: fixed;
     top: 160px;
     right: 0;
+    z-index: 1000;
     padding: 16px;
     background-color: #58874e4d;
 

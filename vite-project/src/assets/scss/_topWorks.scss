@@ -154,10 +154,6 @@
     padding: 120px 24px 0;
   }
 
-  .topTitleLayout {
-    opacity: 1;
-  }
-
   .works_list {
     gap: 20px 8%;
   }
@@ -191,18 +187,19 @@
   }
 
   .works_moreBtnWrap {
-    margin: 12% auto;
+    margin: min(72px, 16vw) auto 0;
   }
 
   .works_moreBtn {
-    padding: 10px 24px;
+    gap: 8px;
+    padding: 10px min(24px, 5vw);
 
     img {
-      width: max(16px, 2vw);
+      width: max(15px, 2vw);
     }
   }
 
   .works_moreBtnText {
-    font-size: max(16px, 2vw);
+    font-size: max(15px, 2vw);
   }
 }

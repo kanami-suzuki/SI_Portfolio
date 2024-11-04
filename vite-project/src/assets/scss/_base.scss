@@ -79,6 +79,8 @@ button {
 
 @include sp {
   body {
+    background: #e6e4c7;
+
     &::after {
       opacity: .5;
     }
