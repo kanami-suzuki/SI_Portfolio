@@ -27,6 +27,7 @@
   min-height: 35px;
   padding: 2px 12px 0;
   border-bottom: 1px solid #949494;
+  color: #474747;
 }
 
 .worksYear_list {
@@ -56,7 +57,7 @@
   border-bottom: 1px solid #949494;
   border-left: 1px solid #949494;
   box-sizing: border-box;
-  background-color: #ffffff7e;
+  background-color: #ffffff9d;
   cursor: pointer;
   transition: all .2s ease-in-out;
 
@@ -81,7 +82,7 @@
   .worksContent_head {
     flex-direction: column;
     gap: min(56px, 16vw);
-    margin: min(120px, 16vw) auto 16px;
+    margin: min(120px, 16vw) auto 0;
   }
 
   .worksTitle {
@@ -95,6 +96,24 @@
   }
 
   .worksYear_text {
+    padding: 0 12px;
     border-bottom: none;
+    font-size: 24px;
+  }
+
+  .worksYear_list {
+    width: 85%;
+    height: 48px;
+  }
+
+  .worksYear_item {
+    min-height: 48px;
+    font-size: 24px;
+  }
+
+  .worksContent_list {
+    width: 85%;
+    margin: auto;
+    padding: min(56px, 11vw) 0 0;
   }
 }
