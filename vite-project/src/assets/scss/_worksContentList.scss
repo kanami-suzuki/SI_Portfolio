@@ -26,3 +26,17 @@
   width: 10px;
   margin-top: 5px;
 }
+
+@include sp {
+  .worksContent_more {
+    margin: min(56px, 16vw) auto 0;
+  }
+
+  .worksContent_moreText {
+    font-size: max(15px, 2vw);
+  }
+
+  .works_moreBtn .worksContent_moreArrow {
+    width: max(10px, 2vw);
+  }
+}
