@@ -20,3 +20,15 @@
   margin: 64px auto 0;
   background-color: #d9d9d9;
 }
+
+@include sp {
+  .workDetail {
+    width: 85%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .workDetail_text {
+    font-size: min(18px, 3vw);
+  }
+}

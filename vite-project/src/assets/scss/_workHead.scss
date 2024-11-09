@@ -82,6 +82,8 @@
   }
 
   .workHead_thumbnail {
+    height: 200px;
+
     p {
       @include jost(300);
       top: 12px;

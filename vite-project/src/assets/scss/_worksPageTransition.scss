@@ -77,3 +77,24 @@
     rotate: -90deg;
   }
 }
+
+@include sp {
+  .worksPageTransition {
+    width: 85%;
+    margin: min(96px, 15vw) auto 0;
+    padding: 0;
+
+    a {
+      gap: min(14px, 2vw);
+      padding: 8px min(24px, 4vw);
+
+      p {
+        font-size: min(16px, 5vw);
+      }
+
+      img {
+        width: min(12px, 3vw);
+      }
+    }
+  }
+}
