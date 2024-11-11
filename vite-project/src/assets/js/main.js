@@ -36,4 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  let sp = window.matchMedia("(max-with: 768px)").matches
+  let worksItem = this.querySelectorAll('.works_item');
+  // worksItem.forEach(item => {
+  //   if (sp) {
+  // item.setAttribute("data-aos-delay", "100");
+  //   }
+  // })
 });
