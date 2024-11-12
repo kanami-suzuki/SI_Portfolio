@@ -39,9 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let sp = window.matchMedia("(max-with: 768px)").matches
   let worksItem = this.querySelectorAll('.works_item');
-  // worksItem.forEach(item => {
-  //   if (sp) {
-  // item.setAttribute("data-aos-delay", "100");
-  //   }
-  // })
+  worksItem.forEach(item => {
+    if ((item % 2 === 1)) {
+      console.log(item);
+      item.setAttribute("data-aos-delay", "100");
+    } else if ((item % 2 === 0)) {
+      item.setAttribute("data-aos-delay", "300");
+    }
+  })
 });

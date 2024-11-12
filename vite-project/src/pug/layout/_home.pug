@@ -8,17 +8,16 @@ main
     h3.topWorks_title.topTitleLayout Works
     ul.works_list
       - for(let i = 1; i <= 6; i++)
-        - let delay = (i % 3 === 1) ? 100 : (i % 3 === 2) ? 300 : 600
-          li(data-aos="fade", data-aos-delay=delay, data-aos-duration="1000").works_item
-            a(href="workPages.html") 
-              h4.works_itemTitle タイトル
-                span.wrapping テキスト
-              p.works_itemDate
-                time(datetime="2024-05-03") 2024.05.03 
-              .works_thumbnailImg
-                picture 
-                  source(srcset="./assets/images/worksThumbnail_noImage_sp.png", media="(max-width: 768px)", type="image/png", width="194", height="128")
-                  img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
+        li(data-aos="fade", data-aos-delay=delay, data-aos-duration="1000").works_item
+          a(href="workPages.html") 
+            h4.works_itemTitle タイトル
+              span.wrapping テキスト
+            p.works_itemDate
+              time(datetime="2024-05-03") 2024.05.03 
+            .works_thumbnailImg
+              picture 
+                source(srcset="./assets/images/worksThumbnail_noImage_sp.png", media="(max-width: 768px)", type="image/png", width="194", height="128")
+                img(src="./assets/images/worksThumbnail_noImage.png", alt="サムネイル画像", width="292", height="378")
     .works_moreBtnWrap
       a(href="works.html").works_moreBtn 
         p.works_moreBtnText More Works
