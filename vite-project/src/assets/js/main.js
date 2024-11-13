@@ -37,14 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  let sp = window.matchMedia("(max-with: 768px)").matches
-  let worksItem = this.querySelectorAll('.works_item');
-  worksItem.forEach(item => {
-    if ((item % 2 === 1)) {
-      console.log(item);
-      item.setAttribute("data-aos-delay", "100");
-    } else if ((item % 2 === 0)) {
-      item.setAttribute("data-aos-delay", "300");
-    }
-  })
+  let sp = window.matchMedia('(max-width: 768px)')
+  console.log(sp.matches);
+  let worksItem = document.querySelectorAll('.works_item');
+  const cListner = (e) => {
+    worksItem.forEach((item, index) => {
+      if ((e.matches) && (index % 2 === 0)) {
+        item.setAttribute("data-aos-delay", "100");
+      } else if ((e.matches) && (index % 2 === 1)) {
+        item.setAttribute("data-aos-delay", "300");
+      } else if ((!e.matches) && (index % 3 === 0)) {
+        item.setAttribute("data-aos-delay", "100");
+      } else if ((!e.matches) && (index % 3 === 1)) {
+        item.setAttribute("data-aos-delay", "300");
+      } else if ((!e.matches) && (index % 3 === 2)) {
+        item.setAttribute("data-aos-delay", "600");
+      }
+    })
+  }
+  sp.addEventListener("change", cListner);
+  cListner(sp);
 });
