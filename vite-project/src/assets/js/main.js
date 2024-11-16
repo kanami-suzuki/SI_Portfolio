@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  //worksプルダウン
   const worksYearList = document.querySelector('.worksYear_list');
   if (worksYearList && worksYearList.classList.contains('worksYear_list')) {
-    console.log('true');
     let worksList = document.querySelector('#year');
     let defaultValue = document.querySelector('#defaultValue');
     let defaultAnchor = defaultValue.querySelector('a');
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //aos-delayの調整
   let sp = window.matchMedia('(max-width: 768px)')
-  console.log(sp.matches);
   let worksItem = document.querySelectorAll('.works_item');
   const cListner = (e) => {
     worksItem.forEach((item, index) => {
@@ -57,4 +57,42 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   sp.addEventListener("change", cListner);
   cListner(sp);
+
+  //works表示
+  const worksContainer = document.querySelector('#works_container');
+  const show = Number(worksContainer.dataset.show);
+  const worksContent = document.querySelectorAll('#works_container .works_item');
+  const mt = document.querySelector('#works_moreBtn');
+
+  for (let i = 0; i < worksContent.length; i++) {
+    if (i >= show) {
+      worksContent[i].style.display = "none";
+      worksContent[i].setAttribute("data-mt", "false");
+    } else {
+      worksContent[i].style.display = "block";
+      worksContent[i].setAttribute("data-mt", "true");
+    }
+  }
+
+  const updateMoreButtonVisibility = () => {
+    const hiddenItems = Array.from(worksContent).some(
+      (item) => item.getAttribute("data-mt") === "false"
+    );
+    mt.style.display = hiddenItems ? "flex" : "none";
+  };
+  updateMoreButtonVisibility();
+
+  let showCount = show;
+  mt.addEventListener('click', (e) => {
+    e.preventDefault();
+    showCount += show;
+
+    for (let i = 0; i < worksContent.length && i < showCount; i++) {
+      worksContent[i].style.display = "block";
+      worksContent[i].removeAttribute("data-mt", "false");
+      worksContent[i].setAttribute("data-mt", "true");
+    }
+    updateMoreButtonVisibility();
+  })
+
 });
