@@ -7,14 +7,18 @@ html(lang="ja")
     
     //- nameに基づいて条件分岐
     if name == 'home'
+      meta(name="description", content="作曲家として活動する井上栞のポートフォリオです。主に劇版音楽のジャンルで活動しています。個人のご依頼も随時承っておりますので、お気軽にご相談ください。")
       title Shiori Inoue -HOME-
     
     if name == 'works'
+      meta(name="description", content="作曲家として活動する井上栞のポートフォリオです。これまで手掛けた作品を年別でご紹介しています。")
       title Shiori Inoue -Works-
 
     if name == 'work'
+      meta(name="description", content="作曲家・井上栞のポートフォリオです。作品ごとの詳しい情報をご紹介しています。")
       title Shiori Inoue -WorkPages-
     
+    link(rel="apple-touch-icon", href="./assets/images/favicon.ico" sizes="192x192")
     link(rel="shortcut icon", href="./assets/images/favicon.ico", type="image/x-icon")
     link(rel="stylesheet", href="./assets/scss/style.scss")
     script(src="./assets/js/main.js" type="module")

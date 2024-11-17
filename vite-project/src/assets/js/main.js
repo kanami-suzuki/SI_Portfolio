@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   AOS.init()
 });
 
+const loading = document.querySelector('.loading');
+window.addEventListener('load', () => {
+  window.setTimeout(() => {
+    loading.classList.add('remove');
+  }, 3000)
+})
+
 document.addEventListener("DOMContentLoaded", function () {
   //worksプルダウン
   const worksYearList = document.querySelector('.worksYear_list');
@@ -60,39 +67,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //works表示
   const worksContainer = document.querySelector('#works_container');
-  const show = Number(worksContainer.dataset.show);
-  const worksContent = document.querySelectorAll('#works_container .works_item');
-  const mt = document.querySelector('#works_moreBtn');
+  if (worksContainer && worksContainer.classList.contains('worksPage_list')) {
+    const show = Number(worksContainer.dataset.show);
+    const worksContent = document.querySelectorAll('#works_container .works_item');
+    const mt = document.querySelector('#works_moreBtn');
 
-  for (let i = 0; i < worksContent.length; i++) {
-    if (i >= show) {
-      worksContent[i].style.display = "none";
-      worksContent[i].setAttribute("data-mt", "false");
-    } else {
-      worksContent[i].style.display = "block";
-      worksContent[i].setAttribute("data-mt", "true");
+    for (let i = 0; i < worksContent.length; i++) {
+      if (i >= show) {
+        worksContent[i].style.display = "none";
+        worksContent[i].setAttribute("data-mt", "false");
+      } else {
+        worksContent[i].style.display = "block";
+        worksContent[i].setAttribute("data-mt", "true");
+      }
     }
-  }
 
-  const updateMoreButtonVisibility = () => {
-    const hiddenItems = Array.from(worksContent).some(
-      (item) => item.getAttribute("data-mt") === "false"
-    );
-    mt.style.display = hiddenItems ? "flex" : "none";
-  };
-  updateMoreButtonVisibility();
-
-  let showCount = show;
-  mt.addEventListener('click', (e) => {
-    e.preventDefault();
-    showCount += show;
-
-    for (let i = 0; i < worksContent.length && i < showCount; i++) {
-      worksContent[i].style.display = "block";
-      worksContent[i].removeAttribute("data-mt", "false");
-      worksContent[i].setAttribute("data-mt", "true");
-    }
+    const updateMoreButtonVisibility = () => {
+      const hiddenItems = Array.from(worksContent).some(
+        (item) => item.getAttribute("data-mt") === "false"
+      );
+      mt.style.display = hiddenItems ? "flex" : "none";
+    };
     updateMoreButtonVisibility();
-  })
+
+    const worksYearItem = document.querySelectorAll('.worksYear_item a');
+    for (let a = 0; a < worksYearItem.length; a++) {
+      worksYearItem[a].addEventListener('click', () => {
+        for (let i = 0; i < worksContent.length; i++) {
+          if (i >= show) {
+            worksContent[i].style.display = "none";
+            worksContent[i].setAttribute("data-mt", "false");
+          } else {
+            worksContent[i].style.display = "block";
+            worksContent[i].setAttribute("data-mt", "true");
+          }
+        }
+      })
+    }
+
+    let showCount = show;
+    mt.addEventListener('click', (e) => {
+      e.preventDefault();
+      showCount += show;
+
+      for (let i = 0; i < worksContent.length && i < showCount; i++) {
+        worksContent[i].style.display = "block";
+        worksContent[i].removeAttribute("data-mt", "false");
+        worksContent[i].setAttribute("data-mt", "true");
+      }
+      updateMoreButtonVisibility();
+    })
+  }
 
 });
