@@ -3,14 +3,14 @@
 .workHead {
   position: relative;
   max-width: 950px;
-  margin-top: 48px;
+  margin: 48px auto 0;
 }
 
 .workHead_title {
   @include nsJP(400);
   position: absolute;
   top: -28px;
-  left: 0;
+  left: 32px;
   z-index: 2;
   padding: 5px 62px 5px 24px;
   background-color: #ffffffcc;
@@ -23,6 +23,7 @@
   align-items: center;
   position: relative;
   height: 250px;
+  margin: 0 calc(50% - 50vw);
   overflow: hidden;
   background-color: #322c25;
 
@@ -41,7 +42,7 @@
     top: 16px;
     right: 24px;
     z-index: 3;
-    color: #ffffff99;
+    color: #ffffff4d;
     font-size: 24px;
     text-align: right;
   }
