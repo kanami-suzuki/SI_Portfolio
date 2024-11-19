@@ -10,7 +10,7 @@ const loading = document.querySelector('.loading');
 window.addEventListener('load', () => {
   window.setTimeout(() => {
     loading.classList.add('remove');
-  }, 3000)
+  }, 2000)
 })
 
 document.addEventListener("DOMContentLoaded", function () {
