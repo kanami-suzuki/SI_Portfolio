@@ -10,10 +10,22 @@ const loading = document.querySelector('.loading');
 window.addEventListener('load', () => {
   window.setTimeout(() => {
     loading.classList.add('remove');
-  }, 2000)
+  }, 1000)
 })
 
 document.addEventListener("DOMContentLoaded", function () {
+  let sp = window.matchMedia('(max-width: 768px)')
+
+  const topVisual = document.querySelector('.topVisual_container');
+  if (topVisual && topVisual.classList.contains('topVisual_container') && sp.matches) {
+    const vHeight = () => {
+      const v = window.innerHeight - 78;
+      topVisual.style.minHeight = v + 'px';
+    }
+    vHeight();
+    window.addEventListener('resize', vHeight);
+  }
+
   //worksプルダウン
   const worksYearList = document.querySelector('.worksYear_list');
   if (worksYearList && worksYearList.classList.contains('worksYear_list')) {
@@ -45,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   //aos-delayの調整
-  let sp = window.matchMedia('(max-width: 768px)')
   let worksItem = document.querySelectorAll('.works_item');
   const cListner = (e) => {
     worksItem.forEach((item, index) => {
