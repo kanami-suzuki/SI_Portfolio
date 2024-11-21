@@ -25,8 +25,9 @@
 @include sp {
   .workDetail {
     width: 85%;
-    margin: auto;
+    margin: 5rem auto 0;
     padding: 0;
+    overflow: hidden;
   }
 
   .workDetail_text {

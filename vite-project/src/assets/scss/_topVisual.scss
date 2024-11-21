@@ -84,24 +84,16 @@
 }
 
 @include sp {
-  // .topVisual_container {
-  //   height: 90vh;
-  //   height: 90svh;
-  // }
 
   .scrollDown {
     right: 0;
-    bottom: 120px;
+    bottom: 56px;
     left: 0;
     margin: auto;
 
     span {
       height: 40px;
     }
-  }
-
-  .topTitle {
-    margin-top: -50%;
   }
 
   .topTitleLayout {

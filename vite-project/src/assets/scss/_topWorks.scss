@@ -93,7 +93,8 @@
   overflow: hidden;
   border: 1px solid #a2a2a280;
 
-  &:hover::after {
+  &:hover::after,
+  &:active::after {
     transform: scaleX(1);
 
     transform-origin: left;
@@ -126,7 +127,8 @@
   padding: 12px 24px;
   transition: all .5s;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: #ffffff;
 
     img {
@@ -164,16 +166,6 @@
 
     a {
       grid-template-rows: .5fr 1fr .5fr;
-    }
-  }
-
-  .topWorks_list {
-    .works_item {
-
-      &:nth-of-type(5),
-      &:nth-of-type(6) {
-        display: none;
-      }
     }
   }
 
