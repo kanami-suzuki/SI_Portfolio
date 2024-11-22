@@ -43,6 +43,20 @@ header {
   display: none;
 }
 
+.header_instaIcom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: #000000;
+
+  img {
+    width: 13px;
+  }
+}
+
 
 @include sp {
   header {
@@ -95,5 +109,15 @@ header {
 
   .header_Xicom {
     margin-bottom: 16px;
+  }
+
+  .header_instaIcom {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+
+    img {
+      width: 18px;
+    }
   }
 }
