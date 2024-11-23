@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const topVisual = document.querySelector('.topVisual_container');
   if (topVisual && topVisual.classList.contains('topVisual_container') && sp.matches) {
     const vHeight = () => {
-      const v = window.innerHeight;
-      topVisual.style.minHeight = v + 'px';
+      const v = window.innerHeight * 0.01;
+      topVisual.style.setProperty('--vh', `${v}px`);
     }
     vHeight();
     window.addEventListener('resize', vHeight);
