@@ -15,7 +15,10 @@ export default defineConfig({
       input: {
         main: "src/index.pug",
         works: "src/works.pug",
-        workPages: "src/workPages.pug"
+        workPages: "src/workPages.pug",
+        base: "src/assets/scss/base.scss",
+        loading: "src/assets/scss/loading.scss",
+        style: "src/assets/scss/style.scss"
       },
       output: {
         entryFileNames: `assets/js/[name].js`,
