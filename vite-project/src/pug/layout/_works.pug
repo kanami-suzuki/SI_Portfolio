@@ -5,17 +5,17 @@ main
       p.worksYear_text Year
       ul#year.worksYear_list
         li#defaultValue.worksYear_item
-          a(href="#") 
+          button(type="button") 
         li.worksYear_item
-          a(href="#") All
+          button(type="button") All
         li.worksYear_item
-          a(href="#") 2024
+          button(type="button") 2024
         li.worksYear_item
-          a(href="#")  2023
+          button(type="button") 2023
         li.worksYear_item
-          a(href="#")  2022
+          button(type="button") 2022
         li.worksYear_item
-          a(href="#")  2021
+          button(type="button") 2021
   section.worksContent_list
     ul(data-show="6")#works_container.works_list.worksPage_list
       - for(let i = 1; i <= 20; i++)
