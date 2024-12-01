@@ -1,0 +1,5 @@
+{
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.9.zip"
+  ]
+}
