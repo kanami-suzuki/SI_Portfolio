@@ -1,1 +1,256 @@
-@font-face{font-style:normal;font-weight:900;src:url(../font/Jost/Jost-Black.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:700;src:url(../font/Jost/Jost-Bold.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:800;src:url(../font/Jost/Jost-ExtraBold.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:200;src:url(../font/Jost/Jost-ExtraLight.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:300;src:url(../font/Jost/Jost-Light.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:500;src:url(../font/Jost/Jost-Medium.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:400;src:url(../font/Jost/Jost-Regular.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:600;src:url(../font/Jost/Jost-SemiBold.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:100;src:url(../font/Jost/Jost-Thin.ttf) format("truetype");font-family:Jost}@font-face{font-style:normal;font-weight:900;src:url(../font/Noto_Sans_JP/NotoSansJP-Black.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:700;src:url(../font/Noto_Sans_JP/NotoSansJP-Bold.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:800;src:url(../font/Noto_Sans_JP/NotoSansJP-ExtraBold.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:200;src:url(../font/Noto_Sans_JP/NotoSansJP-ExtraLight.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:300;src:url(../font/Noto_Sans_JP/NotoSansJP-Light.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:500;src:url(../font/Noto_Sans_JP/NotoSansJP-Medium.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:400;src:url(../font/Noto_Sans_JP/NotoSansJP-Regular.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:600;src:url(../font/Noto_Sans_JP/NotoSansJP-SemiBold.ttf) format("truetype");font-family:NotoSansJP}@font-face{font-style:normal;font-weight:100;src:url(../font/Noto_Sans_JP/NotoSansJP-Thin.ttf) format("truetype");font-family:NotoSansJP}.loading{z-index:10000;position:fixed;top:0;right:0;bottom:0;left:0;width:100%;height:100%;background:radial-gradient(circle,#deddcd,#dddab7)}.loading:after{z-index:-1;position:fixed;top:0;width:100%;height:100vh;background-image:url(../images/PC_bg.webp);background-size:contain;background-repeat:repeat;content:"";opacity:.2}.loading.remove{visibility:hidden;opacity:0;-webkit-user-select:none;-moz-user-select:none;transition:1s;user-select:none}.loading_wrap{display:flex;position:relative;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%}.loading_wrap p{font-weight:500;font-size:20px;font-family:Jost;letter-spacing:.1em;text-shadow:-4px 4px 0 rgba(88,135,78,.3019607843)}.loading_wrap p span{display:inline-block;transform:translateY(-80%);animation:loading-animation 2.5s cubic-bezier(.39,1.57,.58,1) both infinite;opacity:0}.loading_wrap p span:nth-child(1){animation-delay:.06s}.loading_wrap p span:nth-child(2){animation-delay:.12s}.loading_wrap p span:nth-child(3){animation-delay:.18s}.loading_wrap p span:nth-child(4){animation-delay:.24s}.loading_wrap p span:nth-child(5){animation-delay:.3s}.loading_wrap p span:nth-child(6){animation-delay:.36s}.loading_wrap p span:nth-child(7){animation-delay:.42s}@keyframes loading-animation{0%{transform:translateY(-80%);opacity:0}to{transform:translateY(0);opacity:1}}@media (max-width: 768px){body:after{background-image:url(../images/SP_bg.webp);opacity:.3}}
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100;
+  font-family: Jost;
+  ;
+  src: url(../font/Jost/Jost-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100;
+  font-family: NotoSansJP;
+  ;
+  src: url(../font/Noto_Sans_JP/NotoSansJP-Thin.ttf) format("truetype");
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #deddcd, #dddab7);
+}
+
+.loading:after {
+  opacity: .2;
+  ;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/PC_bg.webp);
+  background-size: contain;
+  background-repeat: repeat;
+  content: "";
+}
+
+.loading.remove {
+  visibility: hidden;
+  opacity: 0;
+  user-select: none;
+  ;
+  transition: 1s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.loading_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.loading_wrap p {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: Jost;
+  letter-spacing: .1em;
+  text-shadow: -4px 4px 0 rgba(88, 135, 78, .3019607843);
+}
+
+.loading_wrap p span {
+  display: inline-block;
+  opacity: 0;
+  ;
+  transform: translateY(-80%);
+  animation: loading-animation 2.5s cubic-bezier(.39, 1.57, .58, 1) both infinite;
+}
+
+.loading_wrap p span:nth-child(1) {
+  animation-delay: .06s;
+}
+
+.loading_wrap p span:nth-child(2) {
+  animation-delay: .12s;
+}
+
+.loading_wrap p span:nth-child(3) {
+  animation-delay: .18s;
+}
+
+.loading_wrap p span:nth-child(4) {
+  animation-delay: .24s;
+}
+
+.loading_wrap p span:nth-child(5) {
+  animation-delay: .3s;
+}
+
+.loading_wrap p span:nth-child(6) {
+  animation-delay: .36s;
+}
+
+.loading_wrap p span:nth-child(7) {
+  animation-delay: .42s;
+}
+
+@keyframes loading-animation {
+  0% {
+    opacity: 0;
+    ;
+    transform: translateY(-80%);
+  }
+
+  to {
+    opacity: 1;
+    ;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body:after {
+    opacity: .3;
+    ;
+    background-image: url(../images/SP_bg.webp);
+  }
+}
