@@ -16,7 +16,7 @@ header {
 }
 
 .header_logo {
-  @include jost(400);
+  @include cinzel(400);
   font-size: 20px;
   text-shadow: -4px 4px 0 #58874e4d;
   user-select: none;
@@ -29,7 +29,7 @@ header {
 }
 
 .header_navItem {
-  @include jost(400);
+  @include cinzel(400);
   font-size: 14px;
   text-shadow: -3px 3px 0 #58874e4d;
   user-select: none;
@@ -79,7 +79,7 @@ header {
   }
 
   .header_logo {
-    @include jost(500);
+    @include cinzel(500);
     font-size: 24px;
   }
 
@@ -88,7 +88,7 @@ header {
   }
 
   .header_navItem {
-    @include jost(500);
+    @include cinzel(500);
     font-size: 18px;
   }
 

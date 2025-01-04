@@ -10,7 +10,7 @@
 }
 
 .worksTitle {
-  @include jost(400);
+  @include cinzel(400);
   font-size: 72px;
   letter-spacing: .05em;
   text-shadow: -5px 5px 0 #58874e33;
@@ -23,7 +23,7 @@
 }
 
 .worksYear_text {
-  @include jost(400);
+  @include cinzel(400);
   min-height: 35px;
   padding: 2px 12px 0;
   border-bottom: 1px solid #949494;
@@ -45,7 +45,7 @@
 }
 
 .worksYear_item {
-  @include jost(300);
+  @include cinzel(300);
   display: flex;
   justify-content: center;
   align-items: center;

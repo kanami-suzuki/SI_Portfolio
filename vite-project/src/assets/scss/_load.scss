@@ -9,7 +9,7 @@
   z-index: 10000;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, #deddcd 0%, #dddab7 100%);
+  background: radial-gradient(circle, #ece8dd 0%, #cbc8c2 100%);
 
   &::after {
     opacity: .2;
@@ -42,7 +42,7 @@
   height: 100%;
 
   p {
-    @include jost(500);
+    @include cinzel(500);
     font-size: 20px;
     letter-spacing: .1em;
     text-shadow: -4px 4px 0 #58874e4d;

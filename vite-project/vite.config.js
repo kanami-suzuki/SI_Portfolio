@@ -30,8 +30,8 @@ export default defineConfig({
           if (/\.css$/.test(assetInfo.name)) {
             return 'assets/css/[name].[ext]';
           }
-          if (/Jost.*\.ttf$/.test(assetInfo.name)) {
-            return 'assets/font/Jost/[name].[ext]';
+          if (/cinzel.*\.ttf$/.test(assetInfo.name)) {
+            return 'assets/font/cinzel/[name].[ext]';
           }
           if (/NotoSansJP.*\.ttf$/.test(assetInfo.name)) {
             return 'assets/font/Noto_Sans_JP/[name].[ext]';

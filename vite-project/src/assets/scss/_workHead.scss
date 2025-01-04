@@ -36,7 +36,7 @@
   }
 
   p {
-    @include jost(400);
+    @include cinzel(400);
     position: absolute;
     top: 16px;
     right: 24px;
@@ -57,7 +57,7 @@
 }
 
 .workHead_date {
-  @include jost(400);
+  @include cinzel(400);
   position: absolute;
   right: 24px;
   bottom: 0;
@@ -85,7 +85,7 @@
     height: 200px;
 
     p {
-      @include jost(300);
+      @include cinzel(300);
       top: 12px;
       right: 16px;
       font-size: min(18px, 5vw);
@@ -93,7 +93,7 @@
   }
 
   .workHead_date {
-    @include jost(300);
+    @include cinzel(300);
     right: 16px;
     bottom: 8px;
     padding: 0;
