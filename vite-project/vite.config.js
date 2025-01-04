@@ -30,7 +30,7 @@ export default defineConfig({
           if (/\.css$/.test(assetInfo.name)) {
             return 'assets/css/[name].[ext]';
           }
-          if (/cinzel.*\.ttf$/.test(assetInfo.name)) {
+          if (/Cinzel.*\.ttf$/.test(assetInfo.name)) {
             return 'assets/font/cinzel/[name].[ext]';
           }
           if (/NotoSansJP.*\.ttf$/.test(assetInfo.name)) {
