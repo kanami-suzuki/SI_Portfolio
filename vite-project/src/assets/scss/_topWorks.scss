@@ -7,15 +7,15 @@
 .works_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 40px;
+  width: 100%;
   max-width: 950px;
-  margin: auto;
 }
 
 .works_item {
-  width: calc(100% / 3.5);
+  width: calc(100% / 3.39);
 
   a {
     display: grid;
@@ -144,11 +144,27 @@
 }
 
 .works_moreBtnText {
-  @include cinzel(400);
+  @include cinzel(500);
   position: relative;
   z-index: 2;
   font-size: 20px;
   letter-spacing: .05em;
+
+  span {
+    &:nth-of-type(1) {
+      padding-right: 4px;
+
+      span {
+        padding: 0;
+      }
+    }
+
+    &:nth-of-type(2) {
+      span {
+        padding: 0;
+      }
+    }
+  }
 }
 
 @include sp {

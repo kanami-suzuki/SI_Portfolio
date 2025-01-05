@@ -1,11 +1,16 @@
 main 
   section.topVisual_container
-    h2.topTitle Shiori Inoue
+    h2.topTitle 
+      span S
+        span.lower-case hiori
+      span I
+        span.lower-case noue
     .scrollDown
       span
 
   section#works.topWorks_container
-    h3.topWorks_title.topTitleLayout Works
+    h3.topWorks_title.topTitleLayout W
+      span.lower-case orks
     ul.works_list.topWorks_list
       - for(let i = 1; i <= 4; i++)
         li(data-aos="fade", data-aos-delay=delay, data-aos-duration="1000").works_item
@@ -20,11 +25,16 @@ main
                 img(src="./assets/images/worksThumbnail_noImage.webp", alt="サムネイル画像", width="292", height="378")
     .works_moreBtnWrap
       a(href="works.html").works_moreBtn 
-        p.works_moreBtnText More Works
+        p.works_moreBtnText 
+          span M
+            span.lower-case ore 
+          span W
+            span.lower-case orks
         img(src="./assets/images/arrow_icon.svg", alt="右向きの矢印" width="26" height="16")
   
   section#profile.topProfile_container
-    h3.topProfile_title.topTitleLayout Profile
+    h3.topProfile_title.topTitleLayout P
+      span.lower-case rofile
     .topProfile_content
       .topPrifile_icon: img(src="./assets/images/topProfile_icon.webp", alt="アイコンの画像", width="396", height="396")
       .topPrifile_text
@@ -35,10 +45,11 @@ main
           | 出身とか、取ったことがある賞とか今までの経験とか所属とか使用ツールとかいい感じに
   
   section#contact.topContact_container
-    h3.topContact_title.topTitleLayout Contact
+    h3.topContact_title.topTitleLayout C
+      span.lower-case ontact
     .topContact_content
       p.topContact_text お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。
         br
-        | 確認次第ご返信しますが、場合によっては少しお時間をいただくこともございますのでご了承ください。
+        | お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。(英語)
       p.topContact_btn
         a(href="#", target="_blank", rel="noopener, noreferrer") お問い合わせはこちら
