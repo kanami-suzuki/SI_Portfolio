@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (worksYearList && worksYearList.classList.contains('worksYear_list')) {
     let worksList = document.querySelector('#year');
     let defaultValue = document.querySelector('#defaultValue');
-    let defaultAnchor = defaultValue.querySelector('a');
+    let defaultAnchor = defaultValue.querySelector('button');
     let worksYearItems = document.querySelectorAll('.worksYear_item');
 
     if (!defaultAnchor.textContent.trim()) {
-      defaultAnchor.textContent = worksYearItems[1].querySelector('a').textContent;
+      defaultAnchor.textContent = worksYearItems[1].querySelector('button').textContent;
     }
 
     worksList.addEventListener('click', (event) => {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     worksYearItems.forEach(item => {
       item.addEventListener('click', (event) => {
-        let selectedText = item.querySelector('a').textContent;
+        let selectedText = item.querySelector('button').textContent;
         defaultAnchor.textContent = selectedText;
       });
     });
