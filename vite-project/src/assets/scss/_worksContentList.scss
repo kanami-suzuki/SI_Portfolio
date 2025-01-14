@@ -44,4 +44,10 @@
   .works_moreBtn .worksContent_moreArrow {
     width: max(10px, 2vw);
   }
+
+  .works_moreBtn {
+    .lower-case {
+      font-size: 100%;
+    }
+  }
 }
