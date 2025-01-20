@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   //aos-delayの調整
-  let worksItem = document.querySelectorAll('.works_item');
+  let worksItem = document.querySelectorAll('.works_itemAos');
   const cListner = (e) => {
     worksItem.forEach((item, index) => {
       if ((e.matches) && (index % 2 === 0)) {
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     updateMoreButtonVisibility();
 
-    const worksYearItem = document.querySelectorAll('.worksYear_item a');
+    const worksYearItem = document.querySelectorAll('.worksYear_item button');
     for (let a = 0; a < worksYearItem.length; a++) {
       worksYearItem[a].addEventListener('click', () => {
         for (let i = 0; i < worksContent.length; i++) {

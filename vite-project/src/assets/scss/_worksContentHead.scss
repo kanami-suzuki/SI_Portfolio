@@ -19,6 +19,7 @@
 .worksYear {
   display: flex;
   align-items: center;
+  z-index: 100;
   font-size: 18px;
 }
 
@@ -61,7 +62,7 @@
   cursor: pointer;
   transition: all .2s ease-in-out;
 
-  a {
+  button {
     display: block;
   }
 
