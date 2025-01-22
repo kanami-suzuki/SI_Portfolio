@@ -95,14 +95,32 @@
     min-height: calc(var(--vh, 1vh) * 100);
   }
 
+  .topTitle {
+    margin: auto;
+    font-size: max(35px, 9vw);
+    text-align: center;
+  }
+
   .scrollDown {
     right: 0;
     bottom: 56px;
     left: 0;
+    width: 18px;
+    height: 18px;
     margin: auto;
 
     span {
-      height: 40px;
+      height: 30px;
+
+      &::before,
+      &::after {
+        bottom: 1px;
+        width: 8.4px;
+      }
+
+      &::before {
+        translate: -5px 0;
+      }
     }
   }
 

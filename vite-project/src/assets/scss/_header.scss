@@ -80,7 +80,7 @@ header {
 
   .header_logo {
     @include cinzel(500);
-    font-size: 24px;
+    font-size: min(21px, 5vw);
   }
 
   .header_navList {
@@ -89,7 +89,7 @@ header {
 
   .header_navItem {
     @include cinzel(500);
-    font-size: 18px;
+    font-size: min(18px, 4vw);
   }
 
   .headerHover_nav {
