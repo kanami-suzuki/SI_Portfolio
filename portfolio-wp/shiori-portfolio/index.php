@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <main>
     <section class="topVisual_container">
         <h2 class="topTitle">Shiori Inoue</h2>
@@ -12,7 +13,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="./assets/images/worksThumbnail_noImage.webp" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -21,7 +22,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="./assets/images/worksThumbnail_noImage.webp" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -30,7 +31,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="./assets/images/worksThumbnail_noImage.webp" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -39,19 +40,19 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="./assets/images/worksThumbnail_noImage.webp" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
         </ul>
         <div class="works_moreBtnWrap"><a class="works_moreBtn" href="works.html">
-                <p class="works_moreBtnText">More Works</p><img src="./assets/images/arrow_icon.svg" alt="右向きの矢印" width="26" height="16">
+                <p class="works_moreBtnText">More Works</p><img src="<?php echo get_theme_file_uri('./assets/images/arrow_icon.svg') ?>" alt="右向きの矢印" width="26" height="16">
             </a></div>
     </section>
     <section class="topProfile_container" id="profile">
         <h3 class="topProfile_title topTitleLayout">Profile</h3>
         <div class="topProfile_content">
-            <div class="topPrifile_icon"><img src="./assets/images/topProfile_icon.webp" alt="アイコンの画像" width="396" height="396"></div>
+            <div class="topPrifile_icon"><img src="<?php echo get_theme_file_uri('./assets/images/topProfile_icon.webp') ?>" alt="アイコンの画像" width="396" height="396"></div>
             <div class="topPrifile_text">
                 <h4 class="topPrifile_textName">井上 栞 <span class="lower-case">(Shiori Inoue)</span></h4>
                 <p class="topPrifile_textOverview">プロフィール概要<br>出身とか、取ったことがある賞とか今までの経験とか所属とか使用ツールとかいい感じに</p>
