@@ -13,7 +13,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -22,7 +22,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -31,7 +31,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -40,7 +40,7 @@
                     <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
                     <div class="works_thumbnailImg">
                         <picture>
-                            <source srcset="./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
+                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
                 </a></li>
@@ -62,7 +62,7 @@
     <section class="topContact_container" id="contact">
         <h3 class="topContact_title topTitleLayout">Contact</h3>
         <div class="topContact_content">
-            <p class="topContact_text">お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。<br>確認次第ご返信しますが、場合によっては少しお時間をいただくこともございますのでご了承ください。</p>
+            <p class="topContact_text">お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。</p>
             <p class="topContact_btn"><a href="#" target="_blank" rel="noopener, noreferrer">お問い合わせはこちら</a></p>
         </div>
     </section>

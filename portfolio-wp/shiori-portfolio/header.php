@@ -21,7 +21,7 @@
     </div>
     <div class="background_image"></div>
     <header class="topHeader">
-        <h1 class="header_logo"><a href="#">Shiori Inoue</a></h1>
+        <h1 class="header_logo"><a href="<?php echo esc_url('/') ?>">Shiori Inoue</a></h1>
         <nav class="header_nav header_navPC">
             <ul class="header_navList">
                 <li class="header_navItem"> <a href="#works">works</a></li>
