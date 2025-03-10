@@ -9,4 +9,14 @@
   }
   add_action('wp_enqueue_scripts', 'theme_enqueue_files');
 
+  function my_widget_init() {
+    register_sidebar( array(
+      'name' => 'プロフィール文',
+      'id'   => 'profile',
+      'before_widget'  => '<div class="textwidget topPrifile_textOverview">',
+      'after_widget'   => '</div>',
+    ));
+  }
+  add_action('widgets_init', 'my_widget_init');
+
 ?>

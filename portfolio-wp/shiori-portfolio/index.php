@@ -55,7 +55,7 @@
             <div class="topPrifile_icon"><img src="<?php echo get_theme_file_uri('./assets/images/topProfile_icon.webp') ?>" alt="アイコンの画像" width="396" height="396"></div>
             <div class="topPrifile_text">
                 <h4 class="topPrifile_textName">井上 栞 <span class="lower-case">(Shiori Inoue)</span></h4>
-                <p class="topPrifile_textOverview">プロフィール概要<br>出身とか、取ったことがある賞とか今までの経験とか所属とか使用ツールとかいい感じに</p>
+                <?php get_sidebar(); ?>
             </div>
         </div>
     </section>
