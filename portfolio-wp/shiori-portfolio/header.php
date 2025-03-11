@@ -23,13 +23,36 @@
     <header class="topHeader">
         <h1 class="header_logo"><a href="<?php echo esc_url('/') ?>">Shiori Inoue</a></h1>
         <nav class="header_nav header_navPC">
+        <?php if ( is_home() || is_front_page() ) : ?>
             <ul class="header_navList">
                 <li class="header_navItem"> <a href="#works">works</a></li>
                 <li class="header_navItem"> <a href="#profile">profile</a></li>
                 <li class="header_navItem"> <a href="#contact">contact</a></li>
-                <li class="header_navItem header_Xicom"><a href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer"> <img src="<?php echo get_theme_file_uri('./assets/images/x_icon.svg') ?>" alt="Xのアイコン" width="24" height="24"></a></li>
-                <li class="header_navItem header_instaIcom"><a href="https://www.instagram.com/24_cha/" target="_blank" rel="noopener, noreferrer"> <img src="<?php echo get_theme_file_uri('./assets/images/Instagram.svg') ?>" alt="Instagramのアイコン" width="24" height="24"></a></li>
+                <li class="header_navItem header_Xicom">
+                    <a href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer">
+                        <img src="<?php echo get_theme_file_uri('./assets/images/x_icon.svg') ?>" alt="Xのアイコン" width="24" height="24">
+                    </a>
+                </li>
+                <li class="header_navItem header_instaIcom">
+                    <a href="https://www.instagram.com/24_cha/" target="_blank" rel="noopener, noreferrer">
+                        <img src="<?php echo get_theme_file_uri('./assets/images/Instagram.svg') ?>" alt="Instagramのアイコン" width="24" height="24">
+                    </a>
+                </li>
             </ul>
+        <?php else : ?>
+            <ul class="header_navList">
+                <li class="header_navItem">
+                    <a href="index.html#contact">
+                        <img src="<?php echo get_theme_file_uri('./assets/images/headerContact_icon.svg') ?>" alt="コンタクトのアイコン" width="24" height="24">
+                    </a>
+                </li>
+                <li class="header_navItem header_Xicom">
+                    <a href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer">
+                        <img src="<?php echo get_theme_file_uri('./assets/images/x_icon.svg') ?>" alt="Xのアイコン" width="24" height="24">
+                    </a>
+                </li>
+            </ul>
+        <?php endif; ?>
         </nav>
         <nav class="header_nav header_navSP">
             <ul class="header_navList">
@@ -39,7 +62,19 @@
         </nav>
     </header>
     <ul class="headerHover_nav">
-        <li class="header_navItem header_Xicom"><a href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer"> <img src="<?php echo get_theme_file_uri('./assets/images/x_icon.svg') ?>" alt="Xのアイコン" width="24" height="24"></a></li>
-        <li class="header_navItem header_instaIcom"><a href="https://www.instagram.com/24_cha/" target="_blank" rel="noopener, noreferrer"> <img src="<?php echo get_theme_file_uri('./assets/images/Instagram.svg') ?>" alt="Instagramのアイコン" width="24" height="24"></a></li>
-        <li class="header_navItem"> <a href="#contact"><img src="<?php echo get_theme_file_uri('./assets/images/headerContact_icon.svg') ?>" alt="コンタクトのアイコン" width="24" height="24"></a></li>
+        <li class="header_navItem header_Xicom">
+            <a href="https://x.com/5_24heyaaa" target="_blank" rel="noopener, noreferrer">
+                <img src="<?php echo get_theme_file_uri('./assets/images/x_icon.svg') ?>" alt="Xのアイコン" width="24" height="24">
+            </a>
+        </li>
+        <li class="header_navItem header_instaIcom">
+            <a href="https://www.instagram.com/24_cha/" target="_blank" rel="noopener, noreferrer">
+                <img src="<?php echo get_theme_file_uri('./assets/images/Instagram.svg') ?>" alt="Instagramのアイコン" width="24" height="24">
+            </a>
+        </li>
+        <li class="header_navItem">
+            <a href="#contact">
+                <img src="<?php echo get_theme_file_uri('./assets/images/headerContact_icon.svg') ?>" alt="コンタクトのアイコン" width="24" height="24">
+            </a>
+        </li>
     </ul>

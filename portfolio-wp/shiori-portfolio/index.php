@@ -45,9 +45,12 @@
                     </div>
                 </a></li>
         </ul>
-        <div class="works_moreBtnWrap"><a class="works_moreBtn" href="works.html">
-                <p class="works_moreBtnText">More Works</p><img src="<?php echo get_theme_file_uri('./assets/images/arrow_icon.svg') ?>" alt="右向きの矢印" width="26" height="16">
-            </a></div>
+        <div class="works_moreBtnWrap">
+          <a class="works_moreBtn" href="<?php echo get_permalink(9); ?>">
+            <p class="works_moreBtnText">More Works</p>
+            <img src="<?php echo get_theme_file_uri('./assets/images/arrow_icon.svg') ?>" alt="右向きの矢印" width="26" height="16">
+          </a>
+        </div>
     </section>
     <section class="topProfile_container" id="profile">
         <h3 class="topProfile_title topTitleLayout">Profile</h3>
