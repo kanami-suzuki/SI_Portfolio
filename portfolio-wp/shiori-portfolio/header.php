@@ -54,12 +54,15 @@
             </ul>
         <?php endif; ?>
         </nav>
+
+        <?php if ( is_home() || is_front_page() ) : ?>
         <nav class="header_nav header_navSP">
             <ul class="header_navList">
                 <li class="header_navItem"> <a href="#works">works</a></li>
                 <li class="header_navItem"> <a href="#profile">profile</a></li>
             </ul>
         </nav>
+        <?php endif; ?>
     </header>
     <ul class="headerHover_nav">
         <li class="header_navItem header_Xicom">

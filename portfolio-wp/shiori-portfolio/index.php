@@ -8,42 +8,31 @@
     <section class="topWorks_container" id="works">
         <h3 class="topWorks_title topTitleLayout">Works</h3>
         <ul class="works_list topWorks_list">
-            <li class="works_item" data-aos="fade" data-aos-duration="1000"><a href="workPages.html">
-                    <h4 class="works_itemTitle">タイトル<span class="wrapping">テキスト</span></h4>
-                    <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
+
+          <?php
+          $argc = array(
+            'post_type' => 'work-contents',
+          );
+
+          $query = new WP_Query($argc);
+
+          if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+          ?>
+
+            <li class="works_item" data-aos="fade" data-aos-duration="1000">
+                <a href="<?php the_permalink(); ?>">
+                    <h4 class="works_itemTitle"><?php the_title(); ?></h4>
+                    <p class="works_itemDate"><?php the_time('Y.m.d') ?></p>
                     <div class="works_thumbnailImg">
-                        <picture>
-                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
+                      <picture>
+                        <source srcset="<?php echo get_field('sp_thumbnail'); ?>" media="(max-width: 768px)" type="image/webp" width="194" height="128">
+                        <img src="<?php echo get_field('pc_thumbnail'); ?>" alt="サムネイル画像" width="292" height="378">
                         </picture>
                     </div>
-                </a></li>
-            <li class="works_item" data-aos="fade" data-aos-duration="1000"><a href="workPages.html">
-                    <h4 class="works_itemTitle">タイトル<span class="wrapping">テキスト</span></h4>
-                    <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
-                    <div class="works_thumbnailImg">
-                        <picture>
-                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
-                        </picture>
-                    </div>
-                </a></li>
-            <li class="works_item" data-aos="fade" data-aos-duration="1000"><a href="workPages.html">
-                    <h4 class="works_itemTitle">タイトル<span class="wrapping">テキスト</span></h4>
-                    <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
-                    <div class="works_thumbnailImg">
-                        <picture>
-                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
-                        </picture>
-                    </div>
-                </a></li>
-            <li class="works_item" data-aos="fade" data-aos-duration="1000"><a href="workPages.html">
-                    <h4 class="works_itemTitle">タイトル<span class="wrapping">テキスト</span></h4>
-                    <p class="works_itemDate"><time datetime="2024-05-03">2024.05.03 </time></p>
-                    <div class="works_thumbnailImg">
-                        <picture>
-                            <source srcset="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage_sp.webp" media="(max-width: 768px)') ?>" type="image/webp" width="194" height="128"><img src="<?php echo get_theme_file_uri('./assets/images/worksThumbnail_noImage.webp') ?>" alt="サムネイル画像" width="292" height="378">
-                        </picture>
-                    </div>
-                </a></li>
+                </a>
+            </li>
+          
+          <?php endwhile; endif; wp_reset_postdata(); ?>
         </ul>
         <div class="works_moreBtnWrap">
           <a class="works_moreBtn" href="<?php echo get_permalink(9); ?>">
