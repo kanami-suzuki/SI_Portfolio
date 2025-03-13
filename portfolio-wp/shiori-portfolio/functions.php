@@ -19,4 +19,13 @@
   }
   add_action('widgets_init', 'my_widget_init');
 
+  function get_post_years() {
+    global $wpdb;
+    $query = "SELECT DISTINCT YEAR(post_date) AS year FROM {$wpdb->posts} WHERE post_status = %s AND post_type = %s ORDER BY post_date DESC";
+    $prepared_query = $wpdb->prepare($query, 'publish', 'work-contents');
+
+    $years = $wpdb->get_col($prepared_query);
+    return $years;
+}
+
 ?>

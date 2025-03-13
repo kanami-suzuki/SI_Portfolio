@@ -584,20 +584,36 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     n(), window.addEventListener("resize", n)
   }
+
   const g = document.querySelector(".worksYear_list");
   if (g && g.classList.contains("worksYear_list")) {
     let n = document.querySelector("#year"),
       m = document.querySelector("#defaultValue").querySelector("button"),
-      s = document.querySelectorAll(".worksYear_item");
-    m.textContent.trim() || (m.textContent = s[1].querySelector("button").textContent), n.addEventListener("click", f => {
-      f.preventDefault(), n.classList.contains("worksYear_listVisible") ? n.classList.remove("worksYear_listVisible") : n.classList.add("worksYear_listVisible")
-    }), s.forEach(f => {
+      s = document.querySelectorAll(".worksYear_item"),
+      works = document.querySelectorAll(".works_item");
+
+    m.textContent.trim() || (m.textContent = s[1].querySelector("button").textContent);
+
+    n.addEventListener("click", f => {
+      f.preventDefault();
+      n.classList.contains("worksYear_listVisible") ? n.classList.remove("worksYear_listVisible") : n.classList.add("worksYear_listVisible");
+    });
+
+    s.forEach(f => {
       f.addEventListener("click", l => {
         let r = f.querySelector("button").textContent;
-        m.textContent = r
-      })
-    })
+        m.textContent = r;
+
+        // フィルタリング処理
+        works.forEach(work => {
+          let postYear = work.getAttribute("data-year");
+          work.style.display = (r === "All" || postYear === r) ? "block" : "none";
+        });
+      });
+    });
   }
+
+
   let d = document.querySelectorAll(".works_itemAos");
   const o = n => {
     d.forEach((a, m) => {

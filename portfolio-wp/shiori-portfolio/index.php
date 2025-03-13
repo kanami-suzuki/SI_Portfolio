@@ -44,7 +44,9 @@
     <section class="topProfile_container" id="profile">
         <h3 class="topProfile_title topTitleLayout">Profile</h3>
         <div class="topProfile_content">
-            <div class="topPrifile_icon"><img src="<?php echo get_theme_file_uri('./assets/images/topProfile_icon.webp') ?>" alt="アイコンの画像" width="396" height="396"></div>
+            <div class="topPrifile_icon">
+              <img src="<?php echo get_theme_file_uri('./assets/images/topProfile_icon.webp') ?>" alt="アイコンの画像" width="396" height="396">
+            </div>
             <div class="topPrifile_text">
                 <h4 class="topPrifile_textName">井上 栞 <span class="lower-case">(Shiori Inoue)</span></h4>
                 <?php get_sidebar(); ?>
@@ -55,7 +57,9 @@
         <h3 class="topContact_title topTitleLayout">Contact</h3>
         <div class="topContact_content">
             <p class="topContact_text">お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。</p>
-            <p class="topContact_btn"><a href="#" target="_blank" rel="noopener, noreferrer">お問い合わせはこちら</a></p>
+            <p class="topContact_btn">
+              <a href="#" target="_blank" rel="noopener, noreferrer">お問い合わせはこちら</a>
+            </p>
         </div>
     </section>
 </main>
