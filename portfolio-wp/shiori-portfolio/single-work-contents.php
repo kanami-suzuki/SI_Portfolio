@@ -26,23 +26,37 @@
     </section>
 
   <?php endwhile; endif; ?>
+
+
   <ul class="worksPageTransition">
-    <li class="transition_nextBtn">
-      <a href="#">
-        <img src="./assets/images/scrollDown.svg" alt="Nextの矢印">
+
+    <?php
+      $next_post = get_next_post();
+      $next_class = $next_post ? 'workPost_show' : 'workPost_hide';
+    ?>
+    <li class="transition_nextBtn <?php echo $next_class; ?>">
+      <a href="<?php echo $next_post ? get_permalink($next_post->ID) : '#'; ?>">
+        <img src="<?php  echo get_theme_file_uri('./assets/images/scrollDown.svg') ?>" alt="Nextの矢印">
         <p>Next</p>
       </a>
     </li>
+
+
     <li class="transition_allWorksBtn">
-      <a href="works.html">
+      <a href="<?php echo get_permalink(9); ?>">
         <p>All Works</p>
-        <img src="./assets/images/scrollDown.svg" alt="Nextの矢印">
+        <img src="<?php echo get_theme_file_uri('./assets/images/scrollDown.svg') ?>" alt="Nextの矢印">
       </a>
     </li>
-    <li class="transition_prevBtn">
-      <a href="#">
+
+    <?php
+      $prev_post = get_previous_post();
+      $prev_class = $prev_post ? 'workPost_show' : 'workPost_hide';
+    ?>
+    <li class="transition_prevBtn <?php echo $prev_class; ?>">
+      <a href="<?php echo $prev_post ? get_permalink($prev_post->ID) : '#'; ?>">
         <p>Prev</p>
-        <img src="./assets/images/scrollDown.svg" alt="Nextの矢印">
+        <img src="<?php echo get_theme_file_uri('./assets/images/scrollDown.svg') ?>" alt="Nextの矢印">
       </a>
     </li>
   </ul>

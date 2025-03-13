@@ -11,7 +11,7 @@ header {
   background-color: #fff3;
 
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 .header_logo {
@@ -19,10 +19,10 @@ header {
   font-size: 20px;
   font-family: cinzel;
   text-shadow: -4px 4px 0 rgba(88, 135, 78, .3019607843);
-          user-select: none;
+  user-select: none;
 
   -webkit-user-select: none;
-     -moz-user-select: none;
+  -moz-user-select: none;
   ;
 }
 
@@ -37,10 +37,10 @@ header {
   font-size: 14px;
   font-family: cinzel;
   text-shadow: -3px 3px 0 rgba(88, 135, 78, .3019607843);
-          user-select: none;
+  user-select: none;
 
   -webkit-user-select: none;
-     -moz-user-select: none;
+  -moz-user-select: none;
   ;
 }
 
@@ -78,10 +78,10 @@ header {
   font-size: 56px;
   font-family: cinzel;
   text-shadow: -5px 5px 0 rgba(88, 135, 78, .2);
-          user-select: none;
+  user-select: none;
 
   -webkit-user-select: none;
-     -moz-user-select: none;
+  -moz-user-select: none;
   ;
 }
 
@@ -251,7 +251,7 @@ header {
 .works_moreBtnWrap {
   position: relative;
   width: -moz-fit-content;
-  width:      fit-content;
+  width: fit-content;
   margin: 36px auto;
   overflow: hidden;
   border: 1px solid rgba(162, 162, 162, .5019607843);
@@ -275,12 +275,12 @@ header {
   background-color: #a2a2a2;
   content: "";
   pointer-events: none;
-          user-select: none;
+  user-select: none;
   transition: all .5s ease;
   transition-property: transform;
 
   -webkit-user-select: none;
-     -moz-user-select: none;
+  -moz-user-select: none;
   transform-origin: left;
   ;
 }
@@ -393,7 +393,7 @@ header {
 
 .topContact_btn {
   width: -moz-fit-content;
-  width:      fit-content;
+  width: fit-content;
   margin: 32px auto 0;
   border: 1px solid #322c25;
   background-color: #322c25;
@@ -424,12 +424,12 @@ header {
   background-color: #ffffff4d;
   content: "";
   pointer-events: none;
-          user-select: none;
+  user-select: none;
   transition: all .5s ease;
   transition-property: transform;
 
   -webkit-user-select: none;
-     -moz-user-select: none;
+  -moz-user-select: none;
   transform-origin: left;
   ;
 }
@@ -603,9 +603,9 @@ header {
   margin: auto;
 
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 
 .workHead_date {
@@ -685,12 +685,12 @@ header {
   background-color: #a2a2a2;
   content: "";
   pointer-events: none;
-          user-select: none;
+  user-select: none;
   transition: all .5s ease;
   transition-property: transform;
 
   -webkit-user-select: none;
-     -moz-user-select: none;
+  -moz-user-select: none;
   transform-origin: left;
   ;
 }
@@ -718,6 +718,18 @@ header {
   rotate: -90deg;
 }
 
+.workPost_hide {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  transition: opacity .3s ease-in-out;
+}
+
+.workPost_show {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
 .footerContainer {
   padding: 64px 0 24px;
   text-align: center;
@@ -736,7 +748,7 @@ header {
     background-color: #fff0;
 
     -webkit-backdrop-filter: blur(0);
-            backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
   }
 
   .topHeader {
@@ -905,7 +917,7 @@ header {
     ;
   }
 
-  .topProfile_content > div {
+  .topProfile_content>div {
     margin: auto;
   }
 
