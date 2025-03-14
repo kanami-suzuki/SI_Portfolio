@@ -16,13 +16,19 @@
       </div>
       <p class="workHead_date"><?php the_time('Y.m.d') ?></p>
     </section>
+
     <section class="workDetail">
-      <p class="workDetail_text">
-        <?php the_field('about'); ?>
-      </p>
-      <a href="<?php the_field('URL'); ?>" class="workDetail_content">
-        <?php the_field('URL'); ?>
-      </a>
+      <?php if(get_field('about')) : ?>
+        <p class="workDetail_text">
+          <?php the_field('about'); ?>
+        </p>
+      <?php endif; ?>
+
+      <?php if(get_field('URL')) : ?>
+        <a href="<?php the_field('URL'); ?>" class="workDetail_content">
+          ・<?php the_field('URL'); ?>
+        </a>
+      <?php endif ?>
     </section>
 
   <?php endwhile; endif; ?>
