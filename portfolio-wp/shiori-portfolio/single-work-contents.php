@@ -12,7 +12,12 @@
     <section class="workHead">
       <p class="workHead_title"><?php the_title(); ?></p>
       <div class="workHead_thumbnail">
-        <?php the_post_thumbnail('medium'); ?>
+        <?php if(has_post_thumbnail()) : ?>
+          <?php the_post_thumbnail(); ?>
+        <?php else: ?>
+          <p>No Image</p>
+          <img class="workThumbnail_noImage" src="<?php echo get_theme_file_uri('./assets/images/workThumbnail_noImage.webp') ?>" alt="NoImageの画像">
+        <?php endif; ?>
       </div>
       <p class="workHead_date"><?php the_time('Y.m.d') ?></p>
     </section>

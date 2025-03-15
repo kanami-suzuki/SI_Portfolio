@@ -24,10 +24,12 @@
                     <h4 class="works_itemTitle"><?php the_title(); ?></h4>
                     <p class="works_itemDate"><?php the_time('Y.m.d') ?></p>
                     <div class="works_thumbnailImg">
-                      <picture>
-                        <source srcset="<?php echo get_field('sp_thumbnail'); ?>" media="(max-width: 768px)" type="image/webp" width="194" height="128">
-                        <img src="<?php echo get_field('pc_thumbnail'); ?>" alt="サムネイル画像" width="292" height="378">
-                        </picture>
+                      <?php if(has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail(); ?>
+                      <?php else: ?>
+                        <p>No Image</p>
+                        <img class="workThumbnail_noImage" src="<?php echo get_theme_file_uri('./assets/images/workThumbnail_noImage.webp') ?>" alt="NoImageの画像">
+                      <?php endif; ?>
                     </div>
                 </a>
             </li>
