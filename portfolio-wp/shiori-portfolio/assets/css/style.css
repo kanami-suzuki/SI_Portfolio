@@ -176,6 +176,9 @@ header {
 
 .works_item {
   width: 29.4985250737%;
+  background-color: #473e34;
+  color: #ffffff;
+  font-family: cinzel;
 }
 
 .works_item a {
@@ -186,6 +189,7 @@ header {
   align-items: center;
   position: relative;
   width: 100%;
+  height: 292px;
   transition: all .3s;
 }
 
@@ -225,12 +229,14 @@ header {
 }
 
 .works_thumbnailImg {
-  display: block;
+  display: flex;
+  flex-direction: column;
   grid-column: 1/-1;
   grid-row: 1/-1;
+  justify-content: center;
   z-index: 1;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .works_thumbnailImg img {
@@ -246,6 +252,19 @@ header {
   background-color: #0000004d;
   content: "";
   transition: all .3s;
+}
+
+.home_noImage_text {
+  opacity: .7;
+  padding: 16px 8px 0;
+  font-weight: 200;
+  font-size: 13px;
+  text-align: right;
+}
+
+.works_thumbnailImg .home_noImage {
+  width: 160px;
+  margin: -21px auto 0;
 }
 
 .works_moreBtnWrap {

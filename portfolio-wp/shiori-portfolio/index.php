@@ -27,8 +27,8 @@
                       <?php if(has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                       <?php else: ?>
-                        <p>No Image</p>
-                        <img class="workThumbnail_noImage" src="<?php echo get_theme_file_uri('./assets/images/workThumbnail_noImage.webp') ?>" alt="NoImageの画像">
+                        <p class="home_noImage_text">N<span class="lower-case">o</span> I<span class="lower-case">mage</span></p>
+                        <img class="workThumbnail_noImage home_noImage" src="<?php echo get_theme_file_uri('./assets/images/workThumbnail_noImage.webp') ?>" alt="NoImageの画像">
                       <?php endif; ?>
                     </div>
                 </a>
