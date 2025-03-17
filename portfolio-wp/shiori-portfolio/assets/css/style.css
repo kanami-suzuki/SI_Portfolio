@@ -165,11 +165,11 @@ header {
 .works_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 40px;
   width: 100%;
-  max-width: 950px;
+  max-width: 750px;
   margin: auto;
   ;
 }
