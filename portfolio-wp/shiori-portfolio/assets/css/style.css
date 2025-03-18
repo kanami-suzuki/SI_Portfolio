@@ -885,6 +885,7 @@ header {
 
   .works_item a {
     grid-template-rows: .5fr 1fr .5fr;
+    height: auto;
   }
 
   .works_itemTitle {
@@ -906,6 +907,10 @@ header {
 
   .works_thumbnailImg img {
     width: 100%;
+  }
+
+  .works_thumbnailImg .home_noImage {
+    width: 65%;
   }
 
   .works_moreBtnWrap {
