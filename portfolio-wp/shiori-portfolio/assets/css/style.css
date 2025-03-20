@@ -190,6 +190,7 @@ header {
   position: relative;
   width: 100%;
   height: 292px;
+  overflow: hidden;
   transition: all .3s;
 }
 
@@ -880,14 +881,14 @@ header {
   }
 
   .works_item {
-    width: min(342px, 38vw);
-    height: min(342px, 38vw);
+    width: 45.45454545%;
     background-color: #473e34;
   }
 
   .works_item a {
     grid-template-rows: .5fr 1fr .5fr;
-    height: auto;
+    width: 100%;
+    height: min(342px, 38vw);
   }
 
   .works_itemTitle {
