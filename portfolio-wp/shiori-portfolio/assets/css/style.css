@@ -871,15 +871,17 @@ header {
   }
 
   .topWorks_container {
-    padding: 120px 24px 0;
+    padding: 120px 32px 0;
   }
 
   .works_list {
-    gap: 20px 8%;
+    justify-content: space-between;
+    gap: max(32px, 6vw) 5%;
   }
 
   .works_item {
-    width: 45.4545454545%;
+    width: min(342px, 38vw);
+    height: min(342px, 38vw);
     background-color: #473e34;
   }
 
@@ -920,7 +922,7 @@ header {
 
   .works_thumbnailImg .home_noImage {
     width: 65%;
-    margin: 20% auto;
+    margin: 17% auto;
   }
 
   .works_moreBtnWrap {
