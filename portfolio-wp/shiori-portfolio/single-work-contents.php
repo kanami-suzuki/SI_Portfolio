@@ -30,8 +30,9 @@
       <?php endif; ?>
 
       <?php if(get_field('URL')) : ?>
-        <a href="<?php the_field('URL'); ?>" class="workDetail_content">
+        <a href="<?php the_field('URL'); ?>" class="workDetail_content" target="_blank" rel="noopener, noreferrer">
           ・<?php the_field('URL'); ?>
+          <img src="<?php  echo get_theme_file_uri('./assets/images/new_window.svg') ?>" alt="新しいタブを開く" class="new_window">
         </a>
       <?php endif ?>
     </section>

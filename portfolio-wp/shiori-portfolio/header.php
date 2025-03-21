@@ -76,7 +76,7 @@
             </a>
         </li>
         <li class="header_navItem">
-            <a href="#contact">
+            <a href="<?php echo esc_url('/#contact') ?>">
                 <img src="<?php echo get_theme_file_uri('./assets/images/headerContact_icon.svg') ?>" alt="コンタクトのアイコン" width="24" height="24">
             </a>
         </li>

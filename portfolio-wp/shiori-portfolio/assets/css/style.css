@@ -655,13 +655,19 @@ header {
 .workDetail_content {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 64px auto 0;
+  width: fit-content;
+  margin: 48px 0 0;
+  text-decoration: underline;
   transition: all .3s;
 }
 
 .workDetail_content:hover {
   opacity: .7;
+}
+
+.new_window {
+  width: 20px;
+  padding: 0 0 0 4px;
 }
 
 .worksPageTransition {
