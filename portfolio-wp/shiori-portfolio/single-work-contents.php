@@ -35,6 +35,24 @@
           <img src="<?php  echo get_theme_file_uri('./assets/images/new_window.svg') ?>" alt="新しいタブを開く" class="new_window">
         </a>
       <?php endif ?>
+      <?php if(get_field('URL2')) : ?>
+        <a href="<?php the_field('URL2'); ?>" class="workDetail_content" target="_blank" rel="noopener, noreferrer">
+          ・<?php the_field('URL2'); ?>
+          <img src="<?php  echo get_theme_file_uri('./assets/images/new_window.svg') ?>" alt="新しいタブを開く" class="new_window">
+        </a>
+      <?php endif ?>
+      <?php if(get_field('URL3')) : ?>
+        <a href="<?php the_field('URL3'); ?>" class="workDetail_content" target="_blank" rel="noopener, noreferrer">
+          ・<?php the_field('URL3'); ?>
+          <img src="<?php  echo get_theme_file_uri('./assets/images/new_window.svg') ?>" alt="新しいタブを開く" class="new_window">
+        </a>
+      <?php endif ?>
+
+      <?php if(get_field('thumbnail_url')) : ?>
+        <div class="thumbnail_movie">
+          <?php the_field('thumbnail_url'); ?>
+      </div>
+      <?php endif ?>
     </section>
 
   <?php endwhile; endif; ?>

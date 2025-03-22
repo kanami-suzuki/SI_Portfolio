@@ -670,6 +670,14 @@ header {
   padding: 0 0 0 4px;
 }
 
+.thumbnail_movie {
+  margin-top: 40px;
+}
+
+.thumbnail_movie iframe {
+  width: 100%;
+}
+
 .worksPageTransition {
   display: flex;
   justify-content: space-between;
