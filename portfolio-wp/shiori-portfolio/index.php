@@ -12,6 +12,9 @@
           <?php
           $argc = array(
             'post_type' => 'work-contents',
+            'posts_per_page' => 6,
+            'orderby'        => 'date',
+            'order'          => 'DESC',
           );
 
           $query = new WP_Query($argc);
