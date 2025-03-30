@@ -5,8 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <?php if ( is_home() || is_front_page() ) : ?>
     <meta name="description" content="作曲家として活動する井上栞のポートフォリオです。主に劇版音楽のジャンルで活動しています。個人のご依頼も随時承っておりますので、お気軽にご相談ください。">
     <title>Shiori Inoue -HOME-</title>
+
+    <?php elseif ( is_page('works') ) : ?>
+        <meta name="description" content="作曲家として活動する井上栞のポートフォリオです。これまで手掛けた作品を年別でご紹介しています。">
+        <title>Shiori Inoue -Works-</title>
+
+    <?php elseif ( is_singular('work-contents') ) : ?>
+        <meta name="description" content="作曲家として活動する井上栞のポートフォリオです。<?php echo get_the_title() . ' ' . get_field('about'); ?>">
+        <title>Shiori Inoue -Work-</title>
+
+    <?php endif; ?>
+
     <link rel="apple-touch-icon" href="<?php echo get_theme_file_uri('./assets/images/favicon.ico') ?>" sizes="192x192">
     <link rel="shortcut icon" href="<?php echo get_theme_file_uri('./assets/images/favicon.ico') ?>" type="image/x-icon">
 
