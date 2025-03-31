@@ -63,7 +63,7 @@
         <div class="topContact_content">
             <p class="topContact_text">お仕事のご依頼やお問い合わせは下記リンク先よりお願いいたします。</p>
             <p class="topContact_btn">
-              <a href="#" target="_blank" rel="noopener, noreferrer">お問い合わせはこちら</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbEtEoI1Wux71TwK2NDXAwtkfLVW6r9N8qvC2VMV_HwW8SoQ/viewform" target="_blank" rel="noopener, noreferrer">お問い合わせはこちら</a>
             </p>
         </div>
     </section>

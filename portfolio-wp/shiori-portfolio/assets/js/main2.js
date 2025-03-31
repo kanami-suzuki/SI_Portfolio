@@ -579,10 +579,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const D = document.querySelector(".topVisual_container");
   if (D && D.classList.contains("topVisual_container") && A.matches) {
     const n = () => {
-      const a = window.innerHeight * .01;
-      D.style.setProperty("--vh", `${a}px`)
+      const a = window.innerHeight * 0.01;
+      D.style.setProperty('--vh', `${a}px`)
     };
-    n(), window.addEventListener("resize", n)
+
+    let resizeTimer;
+    const onResize = () => {
+      if (!resizeTimer) {
+        resizeTimer = requestAnimationFrame(() => {
+          n();
+          resizeTimer = null;
+        });
+      }
+    };
+
+    n(), window.addEventListener("resize", onResize)
   }
 
   const g = document.querySelector(".worksYear_list");
